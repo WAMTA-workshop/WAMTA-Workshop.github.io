@@ -1,0 +1,12 @@
+{% assign year = page.year | default: site.current_year %}
+{% assign year_data = site.data.years[year] %}
+{% assign conference = year_data.conference %}
+
+<h5>Contact</h5>
+<p class="text-left">
+  If you have any problems or questions, please contact us via e-mail at:
+  <a href="mailto:{{ conference.email }}">
+    <i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>
+    {{ conference.email }}
+  </a>
+</p>

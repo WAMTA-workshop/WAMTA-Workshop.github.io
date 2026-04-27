@@ -1,0 +1,19 @@
+<div class="row sponsor">
+  {% assign year = page.year | default: site.current_year %}
+  {% assign year_data = site.data.years[year] %}
+  {% assign conference = year_data.conference %}
+  <div class="col">
+    <h5>SPONSORS</h5>
+    {% if conference.sponsors == nil %}
+      <div class="alert alert-warning rounded text-center m-1">
+        <p>TBA</p>
+      </div>
+    {% else %}
+      <div class="row">
+      {% for sponsor in conference.sponsors %}
+        <img class="img-fluid mr-auto d-inline-block mb-2 mt-2" src="{{ sponsor.logo_path | relative_url }}" alt="{{ sponsor.name }}">
+      {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>

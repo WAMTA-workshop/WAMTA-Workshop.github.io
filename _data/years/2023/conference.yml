@@ -1,0 +1,236 @@
+full_title: Workshop on Asynchronous Many-Task Systems and Applications 2023
+short_title: WAMTA 23
+email: patrickdiehl@lsu.edu
+description: > # this means to ignore newlines until "baseurl:"
+  The workshop on Asynchronous Many-Task Systems and Applications brings together AMT developers and application developers.
+location: Baton Rouge, LA, USA
+date: February 15th to 17th, 2023
+# logo_path: /assets/years/2023/images/logo2017.jpg
+logo_path: /assets/years/2023/images/logo.png
+slideshow:
+  - id: 0
+    image_path: /assets/years/2023/images/slideshow/image0.jpg
+    description: Baton Rouge Old Capital Building
+    photographer_name: Darrell Miller
+    photographer_link: https://www.flickr.com/photos/darrellrhodesmiller/
+    active: True
+  - id: 1
+    image_path: /assets/years/2023/images/slideshow/image1.jpg
+    description: Louisiana's Old State Capitol
+    photographer_name: pontla
+    photographer_link: https://www.flickr.com/photos/pontla/
+  - id: 2
+    image_path: /assets/years/2023/images/slideshow/image2.jpg
+    description: Downtown Baton Rouge Skyline
+    photographer_name: Antrell Williams
+    photographer_link: https://www.flickr.com/photos/33630741@N07/
+  - id: 3
+    image_path: /assets/years/2023/images/slideshow/image3.jpg
+    description: Downtown Baton Rouge
+    photographer_name: Antrell Williams
+    photographer_link: https://www.flickr.com/photos/33630741@N07/
+  - id: 4
+    image_path: /assets/years/2023/images/slideshow/image4.jpg
+    description: Tiger Stadium at night
+    photographer_name: getmahesh
+    photographer_link: https://www.flickr.com/photos/getmahesh/
+  - id: 5
+    image_path: /assets/years/2023/images/slideshow/image5.jpg
+    description: Downtown Baton Rouge
+    photographer_name: getmahesh
+    photographer_link: https://www.flickr.com/photos/getmahesh/
+navbar:
+  - id: 0
+    label: Home
+    path: /
+    visible: True
+  - id: 1
+    label: Organization
+    path: /organization
+    visible: True
+  - id: 2
+    label: CfP
+    path: /cfp
+    visible: True
+  - id: 3
+    label: Submission
+    path: /submission
+    visible: True
+  - id: 4
+    label: Program
+    path: /program
+    visible: True
+  - id: 5
+    label: Travel
+    path: /venue
+    visible: True
+  - id: 6
+    label: Registration
+    path: /registration
+    visible: True
+  - id: 7
+    label: Keynote speakers
+    path: /keynote
+    visible: True
+deadlines:
+  - date: 2022-10-24
+    text: Deadline for abstract and poster submission (Extended)
+    pass_due: true
+  - date: 2022-11-01
+    text: Author notification for poster and talks
+    pass_due: ture
+  - date: 2023-01-15
+    text: Deadline for proceedings paper submission
+    pass_due: true
+  - date: 2023-02-08
+    text: Author notification for proceedings papers
+    pass_due: true
+  - date: 2023-02-19
+    text: Deadline for camera-ready paper submission
+    pass_due: true
+news:
+  - date: 2022-05-16
+    text: Damian Rouson (Lawrence Berkeley National Laboratory) announed as keynote speaker
+  - date: 2022-07-07
+    text: George Bosilca (University of Tennessee, Knoxville) announced as keynote speaker
+  - date: 2022-08-03
+    text: Michelle Strout (University of Arizona and HPE) announced as keynote speaker
+sponsors:
+  - name: CCT
+    logo_path: /assets/years/2023/images/sponsors/cct.png
+  - name: TCL
+    logo_path: /assets/years/2023/images/sponsors/tcl.png
+  - name: HPE
+    logo_path: /assets/years/2023/images/sponsors/hplogo_black.png
+  - name: NSF
+    logo_path: /assets/years/2023/images/sponsors/nsf.png
+social_media:
+  facebook_link:
+  twitter_link:
+program_chair:
+  - name: Patrick Diehl
+    org: Louisiana State University (USA)
+    homepage: https://www.diehlpk.de/
+  - name: Hartmut Kaiser
+    org: Louisiana State University (USA)
+    homepage: https://www.lsu.edu/eng/cse/people/faculty/kaiser.php
+  - name: Steven R. Brandt
+    org: Louisiana State University (USA)
+    homepage: https://www.cct.lsu.edu/~sbrandt/
+  - name: Gerald Baumgartner
+    org: Louisiana State University (USA)
+    homepage: https://www.csc.lsu.edu/~gb/
+  - name: J. "Ram" Ramanujam
+    org: Louisiana State University (USA)
+    homepage: http://www.ece.lsu.edu/jxr/
+steering_committee:
+  - name: Alex Aiken
+    org: Stanford (USA)
+    homepage: http://theory.stanford.edu/~aiken/
+  - name: Erwin Laure
+    org: Max Planck Computing & Data Facility (Germany)
+    homepage: https://www.mpcdf.mpg.de/staff/110539
+  - name: Christoph Junghans
+    org: Los Alamos National Laboratory (USA)
+    homepage: https://www.lanl.gov/search-capabilities/profiles/christoph-junghans.shtml
+  - name: Bryce Adelstein Lelbach
+    org: NVIDIA (USA)
+    homepage: https://www.linkedin.com/in/brycelelbach/
+  - name: Thomas Fahringer
+    org: University of Innsbruck (Austria)
+    homepage: http://dps.uibk.ac.at/~tf/
+  - name: Laxmikant V. Kale
+    org: University of Illinois at Urbana-Champaign (USA)
+    homepage: https://cs.illinois.edu/about/people/all-faculty/kale
+  - name: Brad Chamberlain
+    org: HPE and University of Washington (USA)
+    homepage: https://homes.cs.washington.edu/~bradc/
+technical_program_committee:
+  - name: Bita Hasheminezhad
+    org: NASA Ames Research Center (USA)
+    homepage: 
+  - name: Irina Demeshko
+    org: NVIDIA
+    homepage:
+  - name: Brad Richardson
+    org: Sourcery Institute (USA)
+    homepage:
+  - name: Patricia Grubel
+    org: Los Alamos National Laboratory (USA)
+    homepage: 
+  - name: Kevin Huck
+    org: University of Oregon (USA)
+    homepage:
+  - name: Pedro Valero Lara
+    org: Oak Ridge National Laboratory (USA)
+    homepage:
+  - name: Dirk Pflüger
+    org: University of Stuttgart (Germany)
+    homepage: 
+  - name: Metin H. Aktulga
+    org: Michigan State University (USA)
+    homepage:
+  - name: Roman Iakymchuk
+    org: Sorbonne Universite (France)
+    honepage:
+  - name:  Huda Ibeid
+    org: Intel
+    homepage: 
+  - name: Ben Bergen
+    org: Los Alamos National Laboratory (USA)
+    homepage:
+  - name: Dirk Pleiter
+    org: KTH Royal Institute of Technology (Sweden)
+    homepage:
+  - name: Didem Unat
+    org: Koç University (Turkey)
+    homepage: 
+  - name: Keita Teranishi
+    org: Sandia National Laboratories (USA)
+    homepage:
+  - name: Abhinav Bhatele
+    org: University of Maryland, College Park (USA)
+    homepage:
+  - name: Daisy Hollman
+    org: Google
+    homepage: 
+  - name: Gregor Daiß
+    org: University of Stuttgart (Germany)
+    homepage: 
+  - name: Najoude Nader
+    org: Louisiana State University (USA)
+    homepage: 
+  - name: Rod Tohid
+    org: Louisiana State University (USA)
+    homepage: 
+  - name: Dominic Marcello
+    org: Louisiana State University (USA)
+    homepage: https://www.phys.lsu.edu/~dmarcel/
+  - name: Sebastian Eibl
+    org: Max Planck Computing & Data Facility (Germany)
+    homepage: 
+  - name:  Sebastian Ohlmann
+    org: Max Planck Computing & Data Facility (Germany)
+    homepage:
+  - name: Weile Wei
+    org: Lawrence Berkeley National Laboratory (USA)
+    homepage: 
+  - name: Jeff Hammond
+    org: NVIDIA (Finland) 
+    homepage:
+
+technical_program_chair:
+  - name:  Patrick Diehl
+    org: Louisiana State University (USA)
+    homepage: https://www.diehlpk.de/
+  - name: Hartmut Kaiser
+    org: Louisiana State University (USA)
+    homepage: https://www.lsu.edu/eng/cse/people/faculty/kaiser.php
+  - name: Peter Thoman
+    org: University of Innsbruck (Austria)
+    homepage: https://dps.uibk.ac.at/~petert/
+
+webmaster:
+  - name: Parsa Amini
+    org: Halpern-Wight Inc. (USA)
+    homepage: https://www.parsaamini.net/

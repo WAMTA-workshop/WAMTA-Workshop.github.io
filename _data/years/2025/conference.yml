@@ -1,0 +1,215 @@
+full_title: Workshop on Asynchronous Many-Task Systems and Applications
+short_title: WAMTA 2025
+email: qinglei.cao@slu.edu 
+description: > # this means to ignore newlines until "baseurl:"
+  The workshop on Asynchronous Many-Task Systems and Applications brings together AMT developers and application developers.
+location: St. Louis, MO, USA
+date: February 19th to 21st, 2025
+logo_path: /assets/years/2025/images/logo.png
+slideshow:
+  - id: 0
+    image_path: /assets/years/2025/images/slideshow/image0.png
+    description: 
+    photographer_name: 
+    photographer_link: 
+    active: False 
+  - id: 1
+    image_path: /assets/years/2025/images/slideshow/image1.jpg
+    description: 
+    photographer_name: 
+    photographer_link: 
+    active: False 
+  - id: 2
+    image_path: /assets/years/2025/images/slideshow/image2.jpg
+    description: 
+    photographer_name: 
+    photographer_link: 
+    active: False 
+  - id: 3
+    image_path: /assets/years/2025/images/slideshow/image3.jpg
+    description: 
+    photographer_name: 
+    photographer_link: 
+    active: False 
+navbar:
+  - id: 0
+    label: Home
+    path: /
+    visible: True
+  - id: 1
+    label: Organization
+    path: /organization
+    visible: True
+  - id: 2
+    label: CfP
+    path: /cfp
+    visible: True 
+  - id: 3
+    label: Submission
+    path: /submission
+    visible: False
+  - id: 4
+    label: Program
+    path: /program
+    visible: True
+  - id: 5
+    label: Travel
+    path: /venue
+    visible: True
+  - id: 6
+    label: Registration
+    path: /registration
+    visible: True
+  - id: 7
+    label: Keynote speakers
+    path: /keynote
+    visible: True
+deadlines:
+  - date: October 18, 2024
+    text: Deadline for abstract and poster submissions
+    pass_due: True 
+  - date: October 31, 2024
+    text: Notification of acceptance (abstract and poster) 
+    pass_due: True 
+  - date: February 7, 2025
+    text: Deadline for paper submissions (Final Extension)
+    pass_due: True 
+  - date: February 28, 2025 
+    text: Notification of acceptance (paper) 
+    pass_due: True 
+  - date: TBA 
+    text: Deadline for camera-ready paper 
+    pass_due: False 
+
+news:
+  - date: 
+    text: Hatem Ltaief (KAUST) confirmed as keynote speaker. 
+  - date: 
+    text: Alan Edelman (MIT) confirmed as keynote speaker. 
+  - date:
+    text: Christian Trott (SNL) confirmed as keynote speaker.
+sponsors:
+  - name: TCL
+    logo_path: /assets/years/2025/images/sponsors/tcl.png
+social_media:
+  facebook_link:
+  twitter_link:
+program_chair:
+  - name: Patrick Diehl
+    org: Los Alamos National Laboratory (USA)
+    homepage: https://www.diehlpk.de/
+  - name: Qinglei Cao
+    org: Saint Louis University (USA)
+    homepage: https://www.slu.edu/science-and-engineering/academics/computer-science/faculty-and-staff/qinglei-cao.php
+steering_committee:
+  - name: Alex Aiken
+    org: Stanford (USA)
+    homepage: http://theory.stanford.edu/~aiken/
+  - name: Erwin Laure
+    org: Max Planck Computing & Data Facility (Germany)
+    homepage: https://www.mpcdf.mpg.de/staff/110539
+  - name: Christoph Junghans
+    org: Los Alamos National Laboratory (USA)
+    homepage: https://www.lanl.gov/search-capabilities/profiles/christoph-junghans.shtml
+  - name: Bryce Adelstein Lelbach
+    org: NVIDIA (USA)
+    homepage: https://www.linkedin.com/in/brycelelbach/
+  - name: Laxmikant V. Kale
+    org: University of Illinois at Urbana-Champaign (USA)
+    homepage: https://cs.illinois.edu/about/people/all-faculty/kale
+  - name: Brad Chamberlain
+    org: HPE and University of Washington (USA)
+    homepage: https://homes.cs.washington.edu/~bradc/
+  - name: John D. Leidel
+    org: Tactical Computing Laboratories
+    homepage: https://www.linkedin.com/in/john-leidel-5415492/
+technical_program_committee:
+  - name: Kevin Huck
+    org: University of Oregon (USA)
+    homepage:
+  - name: Dirk Pflüger
+    org: University of Stuttgart (Germany)
+    homepage: 
+  - name:  Huda Ibeid
+    org: Intel
+    homepage: 
+  - name: Dirk Pleiter
+    org: KTH Royal Institute of Technology (Sweden)
+    homepage:
+  - name: Didem Unat
+    org: Koç University (Turkey)
+    homepage: 
+  - name: Keita Teranishi
+    org: Sandia National Laboratories (USA)
+    homepage:
+  - name: Gregor Daiß
+    org: University of Stuttgart (Germany)
+    homepage: 
+  - name: Najoude Nader
+    org: Louisiana State University (USA)
+    homepage: 
+  - name: Weile Wei
+    org: Lawrence Berkeley National Laboratory (USA)
+    homepage: 
+  - name: Jeff Hammond
+    org: NVIDIA (Finland) 
+    homepage:
+  - name: Hartmut Kaiser
+    org: Louisiana State University (USA)
+    homepage:
+  - name: J. Ram Ramanujam
+    org: Louisiana State University (USA)
+    homepage:
+  - name: Steven R. Brandt 
+    org: Louisiana State University (USA)
+    homepage:
+  - name: Narasinga Rao Miniskar
+    org: Oak Ridge National Laboratory (USA)
+    homepage:
+  - name: Markus Rampp
+    org: Max Planck Computing and Data Facility (Germany)
+    homepage:
+  - name: Sumathi Lakshmiranganatha
+    org: Los Alamos National Laboratory (USA)
+    homepage:
+  - name: Nikunj Gupta
+    org: Databricks Inc. (USA)
+    homepage:
+  - name: Jonas Posner
+    org: University of Kassel (Germany)
+    homepage:
+  - name: Chris Taylor
+    org: Tactical Computing Laboratories
+    homepage:
+  - name: Aurelien Bouteiller 
+    org: University of Tennessee, Knoxville 
+    homepage:
+  - name: Joseph Schuchart 
+    org: University of Tennessee, Knoxville 
+    homepage:
+  - name: Rabab Alomairy 
+    org: Massachusetts Institute of Technology 
+    homepage:
+  - name: Julian Samaroo 
+    org: Massachusetts Institute of Technology 
+    homepage:
+  - name: Wei Wu 
+    org: NVIDIA 
+    homepage:
+technical_program_chair:
+  - name:  Patrick Diehl
+    org: Los Alamos National Laboratory (USA)
+    homepage: https://www.diehlpk.de/
+  - name: George Bosilca
+    org: NVIDIA 
+    homepage: https://icl.utk.edu/~bosilca/
+  - name: Thomas Herault 
+    org: University of Tennessee, Knoxville (USA) 
+    homepage: https://icl.utk.edu/people/profile/herault
+  - name: Qinglei Cao
+    org: Saint Louis University (USA)
+    homepage: https://www.slu.edu/science-and-engineering/academics/computer-science/faculty-and-staff/qinglei-cao.php
+webmaster:
+  - name: Parsa Amini
+    org: Halpern-Wight Inc. (USA)
+    homepage: https://www.parsaamini.net/

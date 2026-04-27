@@ -1,0 +1,12 @@
+baseurl: ""
+url: "https://wamta-workshop.github.io"
+css: ./assets/hotweb.css
+current_year: "2026"
+
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+timezone: America/Eastern
+google_analytics:
