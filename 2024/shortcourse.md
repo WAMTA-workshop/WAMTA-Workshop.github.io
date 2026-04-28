@@ -1,3 +1,7 @@
 ---
-slide_id: 2
+layout: page
+slide_id: 0
+year: "2024"
 ---
+
+{% include shortcourse.md %}

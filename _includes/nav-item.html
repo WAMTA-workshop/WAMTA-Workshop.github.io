@@ -1,0 +1,12 @@
+{% assign nav_url = year_base | append: include.path %}
+{% assign nav_html = nav_url | append: ".html" %}
+{% assign nav_active = false %}
+{% if page.url == nav_url or page.url == nav_html %}
+  {% assign nav_active = true %}
+{% endif %}
+<li class="nav-item{% if nav_active %} active{% endif %}">
+  <a class="nav-link m-1" href="{{ nav_url | relative_url }}">
+    <strong>{{ include.label | escape }}</strong>
+    {% if nav_active %}<span class="sr-only">(current)</span>{% endif %}
+  </a>
+</li>

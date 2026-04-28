@@ -1,0 +1,18 @@
+---
+intro: "All talks will take place at Saint Louis University, St. Louis, MO 63103.
+  A virtual option is also available via Zoom at: [https://slu.zoom.us/my/qingleicao](https://slu.zoom.us/my/qingleicao).
+  \n\n**Note: The in-person location varies daily. Please check the \"Travel\" section
+  for details.**"
+social_events: []
+schedule:
+  kind: pdf
+  url: "/assets/years/2025/timetable.pdf"
+  file_name: timetable.pdf
+links:
+- label: Schedule
+  url: "/assets/years/2025/timetable.pdf"
+- label: Book of Abstract
+  url: "/assets/years/2025/main.pdf"
+- label: Collection of artifacts
+  url: https://zenodo.org/communities/wamta25/
+show_contact: true

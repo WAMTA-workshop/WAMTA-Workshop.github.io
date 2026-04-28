@@ -1,0 +1,20 @@
+---
+nav_hidden: true
+sections:
+- title: Submission of abstracts and posters
+  body: "Submitted talks are 20 minutes (15 minutes presentation and 5 minutes for
+    questions). Please use EasyChair for your submission. \nThe submission should
+    not exceed 500 words and should not include references. Please indicate by the
+    topic if you are submitting a poster or talk. \n\nTo submit your abstract, please
+    follow below link to the submission site:\n\n[**Abstract Submission Site**](https://easychair.org/conferences/?conf=wamta2025)\n\nNote
+    that at least one of the authors of each abstract accepted for\npresentation in
+    WAMTA 2025 must be registered."
+- title: Submission of workshop proceedings
+  body: |-
+    Authors need to submit their work through EasyChair. Submissions must be in Springer [LNCS](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines) format and between ten and twelve pages, including text, the references section, appendices, and figures.
+
+    At least three program committee members will review each submission. Reviews will be double-blind, and papers get assessed for quality, relevance, and presentation of contributions. Springer LNCS will publish the accepted papers. All submitted manuscripts will be checked for originality by [iThenticate](https://www.ithenticate.com/) (papers that show an insufficient originality might be rejected without a review).
+
+    [**Proceeding Paper  Submission Site**](https://easychair.org/conferences/?conf=wamta2025)
+show_contact: true
+show_important_dates: true

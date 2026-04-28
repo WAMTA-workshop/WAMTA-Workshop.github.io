@@ -1,0 +1,105 @@
+---
+labels:
+  program_chair: Local organizers
+  steering_committee: Scientific Committee
+  technical_program_chair: Technical Program Chair
+  webmaster: Webmaster
+  technical_program_committee: Technical Program Committee
+program_chair:
+- name: Patrick Diehl
+  org: Los Alamos National Laboratory (USA)
+  homepage: https://www.diehlpk.de
+- name: Martin Schulz
+  org: Technical University of Munich (Germany)
+  homepage: https://www.ce.cit.tum.de/caps/mitarbeiter/martin-schulz/
+- name: Erwin Laure
+  org: Max Planck Computing and Data Facility (Germany)
+  homepage: https://www.mpcdf.mpg.de
+- name: Markus Rampp
+  org: Max Planck Computing and Data Facility (Germany)
+  homepage: https://www.mpcdf.mpg.de
+steering_committee:
+- name: Alex Aiken
+  org: Stanford (USA)
+  homepage: http://theory.stanford.edu/~aiken/
+- name: Erwin Laure
+  org: Max Planck Computing & Data Facility (Germany)
+  homepage: https://www.mpcdf.mpg.de/staff/110539
+- name: Christoph Junghans
+  org: Los Alamos National Laboratory (USA)
+  homepage: https://www.lanl.gov/search-capabilities/profiles/christoph-junghans.shtml
+- name: Bryce Adelstein Lelbach
+  org: NVIDIA (USA)
+  homepage: https://www.linkedin.com/in/brycelelbach/
+- name: Laxmikant V. Kale
+  org: University of Illinois at Urbana-Champaign (USA)
+  homepage: https://cs.illinois.edu/about/people/all-faculty/kale
+- name: Brad Chamberlain
+  org: HPE and University of Washington (USA)
+  homepage: https://homes.cs.washington.edu/~bradc/
+technical_program_committee:
+- name: Kevin Huck
+  org: AMD (USA)
+  homepage:
+- name: Dirk Pflüger
+  org: University of Stuttgart (Germany)
+  homepage:
+- name: Metin H. Aktulga
+  org: Michigan State University (USA)
+  homepage:
+- name: Huda Ibeid
+  org: Intel
+  homepage:
+- name: Dirk Pleiter
+  org: KTH Royal Institute of Technology (Sweden)
+  homepage:
+- name: Maxim Moraru
+  org: Los Alamos National Laboratory (USA)
+  homepage:
+- name: Keita Teranishi
+  org: Sandia National Laboratories (USA)
+  homepage:
+- name: Gregor Daiß
+  org: University of Stuttgart (Germany)
+  homepage:
+- name: Najoude Nader
+  org: Louisiana State University (USA)
+  homepage:
+- name: Jeff Hammond
+  org: NVIDIA (Finland)
+  homepage:
+- name: Hartmut Kaiser
+  org: Louisiana State University (USA)
+  homepage:
+- name: Steven R. Brandt
+  org: Louisiana State University (USA)
+  homepage:
+- name: Narasinga Rao Miniskar
+  org: Oak Ridge National Laboratory (USA)
+  homepage:
+- name: Sumathi Lakshmiranganatha
+  org: Los Alamos National Laboratory (USA)
+  homepage:
+- name: Nikunj Gupta
+  org: Amazon (USA)
+  homepage:
+- name: Jonas Posner
+  org: Fulda University of Applied Sciences
+  homepage:
+technical_program_chair:
+- name: Patrick Diehl
+  org: Louisiana State University (USA)
+  homepage: https://www.diehlpk.de/
+- name: Martin Schulz
+  org: Technical University of Munich (Germany)
+  homepage: https://www.ce.cit.tum.de/caps/mitarbeiter/martin-schulz/
+- name: Erwin Laure
+  org: Max Planck Computing and Data Facility (Germany)
+  homepage: https://www.mpcdf.mpg.de
+- name: Markus Rampp
+  org: Max Planck Computing and Data Facility (Germany)
+  homepage: https://www.mpcdf.mpg.de
+webmaster:
+- name: Parsa Amini
+  org: Halpern-Wight Inc. (USA)
+  homepage: https://www.parsaamini.net/

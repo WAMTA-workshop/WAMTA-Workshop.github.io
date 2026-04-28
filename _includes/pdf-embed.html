@@ -1,0 +1,5 @@
+{% assign file_name = include.pdf.file_name | default: "document.pdf" %}
+{% assign pdf_url = include.pdf.url | relative_url %}
+<iframe src="{{ pdf_url }}" title="{{ file_name }}" type="application/pdf" width="100%" height="600" style="border:0;">
+  <p>This browser cannot display PDFs inline. <a href="{{ pdf_url }}">Open {{ file_name }}</a> instead.</p>
+</iframe>

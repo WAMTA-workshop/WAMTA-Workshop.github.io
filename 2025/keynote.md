@@ -1,3 +1,7 @@
 ---
-slide_id: 1
+layout: page
+slide_id: 0
+year: "2025"
 ---
+
+{% include keynote.md %}

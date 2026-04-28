@@ -1,13 +1,13 @@
 <div class="row sponsor">
   <div class="col">
     <h5>SPONSORS</h5>
-    {% if conference.sponsors == nil %}
+    {% if year_data.sponsors == nil or year_data.sponsors == empty %}
       <div class="alert alert-warning rounded text-center m-1">
         <p>TBA</p>
       </div>
     {% else %}
       <div class="row">
-      {% for sponsor in conference.sponsors %}
+      {% for sponsor in year_data.sponsors %}
         <img class="img-fluid mr-auto d-inline-block mb-2 mt-2" src="{{ sponsor.logo_path | relative_url }}" alt="{{ sponsor.name }}">
       {% endfor %}
       </div>

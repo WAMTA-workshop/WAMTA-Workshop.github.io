@@ -1,0 +1,9 @@
+---
+- name: CCT
+  logo_path: "/assets/years/2023/images/sponsors/cct.png"
+- name: TCL
+  logo_path: "/assets/years/2023/images/sponsors/tcl.png"
+- name: HPE
+  logo_path: "/assets/years/2023/images/sponsors/hplogo_black.png"
+- name: NSF
+  logo_path: "/assets/years/2023/images/sponsors/nsf.png"

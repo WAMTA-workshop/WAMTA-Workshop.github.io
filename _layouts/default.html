@@ -1,15 +1,13 @@
-{%- assign path_year = page.dir | default: "/" | remove_first: "/" | split: "/" | first | default: "" -%}
-{%- if path_year == "" -%}
-  {%- assign year = page.year | default: site.current_year -%}
-  {%- assign year_base = "" -%}
+{%- assign year = page.year | default: site.current_year -%}
+{%- if page.year -%}
+  {%- assign year_base = "/" | append: page.year -%}
 {%- else -%}
-  {%- assign year = page.year | default: path_year -%}
-  {%- assign year_base = "/" | append: year -%}
+  {%- assign year_base = "" -%}
 {%- endif -%}
 {%- assign year_data = site.data.years[year] -%}
-{%- assign conference = year_data.conference -%}
+{%- assign year_config = year_data.config -%}
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: " en " }}">
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
 {% include head.html %}
 

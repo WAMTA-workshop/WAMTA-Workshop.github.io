@@ -1,0 +1,7 @@
+---
+- name: CCT
+  logo_path: "/assets/years/2026/images/sponsors/cct.png"
+- name: AMD
+  logo_path: "/assets/years/2026/images/sponsors/amd.png"
+- name: Lenovo
+  logo_path: "/assets/years/2026/images/sponsors/lenovo.png"

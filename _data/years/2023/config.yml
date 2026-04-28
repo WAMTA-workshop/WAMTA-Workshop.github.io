@@ -1,0 +1,44 @@
+---
+full_title: Workshop on Asynchronous Many-Task Systems and Applications 2023
+short_title: WAMTA 23
+email: patrickdiehl@lsu.edu
+description: The workshop on Asynchronous Many-Task Systems and Applications brings
+  together AMT developers and application developers.
+location: Baton Rouge, LA, USA
+date: February 15th to 17th, 2023
+logo_path: "/assets/years/2023/images/logo.png"
+slideshow:
+- id: 0
+  image_path: "/assets/years/2023/images/slideshow/image0.jpg"
+  description: Baton Rouge Old Capital Building
+  photographer_name: Darrell Miller
+  photographer_link: https://www.flickr.com/photos/darrellrhodesmiller/
+  active: true
+- id: 1
+  image_path: "/assets/years/2023/images/slideshow/image1.jpg"
+  description: Louisiana's Old State Capitol
+  photographer_name: pontla
+  photographer_link: https://www.flickr.com/photos/pontla/
+- id: 2
+  image_path: "/assets/years/2023/images/slideshow/image2.jpg"
+  description: Downtown Baton Rouge Skyline
+  photographer_name: Antrell Williams
+  photographer_link: https://www.flickr.com/photos/33630741@N07/
+- id: 3
+  image_path: "/assets/years/2023/images/slideshow/image3.jpg"
+  description: Downtown Baton Rouge
+  photographer_name: Antrell Williams
+  photographer_link: https://www.flickr.com/photos/33630741@N07/
+- id: 4
+  image_path: "/assets/years/2023/images/slideshow/image4.jpg"
+  description: Tiger Stadium at night
+  photographer_name: getmahesh
+  photographer_link: https://www.flickr.com/photos/getmahesh/
+- id: 5
+  image_path: "/assets/years/2023/images/slideshow/image5.jpg"
+  description: Downtown Baton Rouge
+  photographer_name: getmahesh
+  photographer_link: https://www.flickr.com/photos/getmahesh/
+social_media:
+  facebook_link:
+  twitter_link:

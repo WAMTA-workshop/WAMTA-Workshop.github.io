@@ -1,14 +1,14 @@
 <header class="site-header">
   <div class="row">
 
-    <!--conference info-->
+    <!--year-specific workshop info-->
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-5 col-xl-4 offset-xl-1">
 
       <div class="jumbotron">
-        <img class="img-fluid" src="{{ conference.logo_path | relative_url }}">
-        <h5 class="text-center mt-0">{{ conference.date }}</h5>
-        <p class="text-center mt-4 mb-4">{{ conference.full_title }}</p>
-        <p class="text-center mb-0">{{ conference.location }}</p>
+        <img class="img-fluid" src="{{ year_config.logo_path | relative_url }}">
+        <h5 class="text-center mt-0">{{ year_config.date }}</h5>
+        <p class="text-center mt-4 mb-4">{{ year_config.full_title }}</p>
+        <p class="text-center mb-0">{{ year_config.location }}</p>
       </div>
 
     </div>
@@ -20,7 +20,7 @@
 
         <div class="carousel-inner" role="listbox">
 
-          {% for slide in conference.slideshow %}
+          {% for slide in year_config.slideshow %}
             {% if page.slide_id and page.slide_id == slide.id %}
               <div class="carousel-item active">
             {% else %}
@@ -51,41 +51,56 @@
           <div class="collapse navbar-collapse " id="navbarToggler">
             <a class="navbar-brand" href="#"> </a>
             <ul class="navbar-nav mx-auto text-center">
-              {% for nav in conference.navbar %}
-                {% if nav.visible %}
-                  {% assign nav_url = year_base | append: nav.path %}
-                  {% assign nav_html = nav_url | append: ".html" %}
-                  {% if page.url == nav_url or page.url == nav_html %}
-                    <li class="nav-item active">
-                      <a class="nav-link m-1" href="{{ nav_url | relative_url }}">
-                        <strong>{{ nav.label | escape }}</strong>
-                        <span class="sr-only">(current)</span>
-                      </a>
-                    </li>
-                  {% else %}
-                    <li class="nav-item">
-                      <a class="nav-link m-1" href="{{ nav_url | relative_url }}">
-                        <strong>{{ nav.label | escape }}</strong>
-                      </a>
-                    </li>
-                  {% endif %}
-                {% endif %}
-              {% endfor %}
+              {% include nav-item.html label="Home" path="/" %}
+              {% include nav-item.html label="Organization" path="/organization" %}
+              {% include nav-item.html label="CfP" path="/cfp" %}
+
+              {% if year_data.submission and year_data.submission.nav_hidden != true %}
+                {% include nav-item.html label="Submission" path="/submission" %}
+              {% endif %}
+
+              {% if year_data.program and year_data.program.nav_hidden != true %}
+                {% include nav-item.html label="Program" path="/program" %}
+              {% endif %}
+
+              {% if year_data.venue and year_data.venue.nav_hidden != true %}
+                {% include nav-item.html label="Travel" path="/venue" %}
+              {% endif %}
+
+              {% if year_data.registration and year_data.registration.nav_hidden != true %}
+                {% include nav-item.html label="Registration" path="/registration" %}
+              {% endif %}
+
+              {% if year_data.keynote and year_data.keynote.nav_hidden != true %}
+                {% include nav-item.html label="Keynote speakers" path="/keynote" %}
+              {% endif %}
+
+              {% if year_data.shortcourse and year_data.shortcourse.nav_hidden != true %}
+                {% include nav-item.html label="Short course" path="/shortcourse" %}
+              {% endif %}
+
+              {% if year_data.events and year_data.events.nav_hidden != true %}
+                {% include nav-item.html label="Events" path="/events" %}
+              {% endif %}
+
+              {% if year_data.special_issue and year_data.special_issue.nav_hidden != true %}
+                {% include nav-item.html label="Special Issue" path="/special-issue" %}
+              {% endif %}
             </ul>
 
             <ul class="navbar-nav ml-auto">
-              {% if conference.social_media.facebook_link != nil %}
+              {% if year_config.social_media.facebook_link != nil %}
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ conference.social_media.facebook_link }}">
+                  <a class="nav-link" href="{{ year_config.social_media.facebook_link }}">
                     <span class="fa-stack">
                       <i class="fa fa-facebook-square fa-stack-1x"></i>
                     </span>
                   </a>
                 </li>
               {% endif %}
-              {% if conference.social_media.twitter_link != nil %}
+              {% if year_config.social_media.twitter_link != nil %}
               <li class="nav-item">
-                <a class="nav-link" href="{{ conference.social_media.twitter_link }}">
+                <a class="nav-link" href="{{ year_config.social_media.twitter_link }}">
                   <span class="fa-stack">
                     <i class="fa fa-twitter-square fa-stack-1x"></i>
                   </span>

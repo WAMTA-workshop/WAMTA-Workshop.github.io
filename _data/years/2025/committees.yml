@@ -1,0 +1,126 @@
+---
+labels:
+  program_chair: Local Organizers
+  steering_committee: Steering Committee
+  technical_program_chair: Technical Program Chairs
+  webmaster: Webmaster
+  technical_program_committee: Technical Program Committee
+program_chair:
+- name: Patrick Diehl
+  org: Los Alamos National Laboratory (USA)
+  homepage: https://www.diehlpk.de/
+- name: Qinglei Cao
+  org: Saint Louis University (USA)
+  homepage: https://www.slu.edu/science-and-engineering/academics/computer-science/faculty-and-staff/qinglei-cao.php
+steering_committee:
+- name: Alex Aiken
+  org: Stanford (USA)
+  homepage: http://theory.stanford.edu/~aiken/
+- name: Erwin Laure
+  org: Max Planck Computing & Data Facility (Germany)
+  homepage: https://www.mpcdf.mpg.de/staff/110539
+- name: Christoph Junghans
+  org: Los Alamos National Laboratory (USA)
+  homepage: https://www.lanl.gov/search-capabilities/profiles/christoph-junghans.shtml
+- name: Bryce Adelstein Lelbach
+  org: NVIDIA (USA)
+  homepage: https://www.linkedin.com/in/brycelelbach/
+- name: Laxmikant V. Kale
+  org: University of Illinois at Urbana-Champaign (USA)
+  homepage: https://cs.illinois.edu/about/people/all-faculty/kale
+- name: Brad Chamberlain
+  org: HPE and University of Washington (USA)
+  homepage: https://homes.cs.washington.edu/~bradc/
+- name: John D. Leidel
+  org: Tactical Computing Laboratories
+  homepage: https://www.linkedin.com/in/john-leidel-5415492/
+technical_program_committee:
+- name: Kevin Huck
+  org: University of Oregon (USA)
+  homepage:
+- name: Dirk Pflüger
+  org: University of Stuttgart (Germany)
+  homepage:
+- name: Huda Ibeid
+  org: Intel
+  homepage:
+- name: Dirk Pleiter
+  org: KTH Royal Institute of Technology (Sweden)
+  homepage:
+- name: Didem Unat
+  org: Koç University (Turkey)
+  homepage:
+- name: Keita Teranishi
+  org: Sandia National Laboratories (USA)
+  homepage:
+- name: Gregor Daiß
+  org: University of Stuttgart (Germany)
+  homepage:
+- name: Najoude Nader
+  org: Louisiana State University (USA)
+  homepage:
+- name: Weile Wei
+  org: Lawrence Berkeley National Laboratory (USA)
+  homepage:
+- name: Jeff Hammond
+  org: NVIDIA (Finland)
+  homepage:
+- name: Hartmut Kaiser
+  org: Louisiana State University (USA)
+  homepage:
+- name: J. Ram Ramanujam
+  org: Louisiana State University (USA)
+  homepage:
+- name: Steven R. Brandt
+  org: Louisiana State University (USA)
+  homepage:
+- name: Narasinga Rao Miniskar
+  org: Oak Ridge National Laboratory (USA)
+  homepage:
+- name: Markus Rampp
+  org: Max Planck Computing and Data Facility (Germany)
+  homepage:
+- name: Sumathi Lakshmiranganatha
+  org: Los Alamos National Laboratory (USA)
+  homepage:
+- name: Nikunj Gupta
+  org: Databricks Inc. (USA)
+  homepage:
+- name: Jonas Posner
+  org: University of Kassel (Germany)
+  homepage:
+- name: Chris Taylor
+  org: Tactical Computing Laboratories
+  homepage:
+- name: Aurelien Bouteiller
+  org: University of Tennessee, Knoxville
+  homepage:
+- name: Joseph Schuchart
+  org: University of Tennessee, Knoxville
+  homepage:
+- name: Rabab Alomairy
+  org: Massachusetts Institute of Technology
+  homepage:
+- name: Julian Samaroo
+  org: Massachusetts Institute of Technology
+  homepage:
+- name: Wei Wu
+  org: NVIDIA
+  homepage:
+technical_program_chair:
+- name: Patrick Diehl
+  org: Los Alamos National Laboratory (USA)
+  homepage: https://www.diehlpk.de/
+- name: George Bosilca
+  org: NVIDIA
+  homepage: https://icl.utk.edu/~bosilca/
+- name: Thomas Herault
+  org: University of Tennessee, Knoxville (USA)
+  homepage: https://icl.utk.edu/people/profile/herault
+- name: Qinglei Cao
+  org: Saint Louis University (USA)
+  homepage: https://www.slu.edu/science-and-engineering/academics/computer-science/faculty-and-staff/qinglei-cao.php
+webmaster:
+- name: Parsa Amini
+  org: Halpern-Wight Inc. (USA)
+  homepage: https://www.parsaamini.net/

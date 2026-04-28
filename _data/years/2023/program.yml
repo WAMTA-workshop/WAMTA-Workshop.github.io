@@ -1,0 +1,18 @@
+---
+intro: |-
+  * [Schedule ](/assets/years/2023/schedule.pdf)
+
+  * [ Book of Abstracts ](/assets/years/2023/book-of-abstracts.pdf)
+
+  * [ Short course: Modern STL ](/2023/shortcourse)
+
+  * [Recorded talks](https://www.youtube.com/playlist?list=PL7vEgTL3FalZ7xBUvYrlgacIhc3CqbYAM)
+
+  * [Collection of slides and posters](https://zenodo.org/communities/wamta23/?page=1&size=20)
+social_events: []
+schedule:
+  kind: pdf
+  url: "/assets/years/2023/schedule.pdf"
+  file_name: schedule.pdf
+links: []
+show_contact: true

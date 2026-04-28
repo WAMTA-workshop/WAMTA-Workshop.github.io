@@ -1,0 +1,54 @@
+---
+talks:
+- label: Keynote I
+  title: 'Task-based programming models: tradeoffs between granularity and computing
+    platforms'
+  speaker: Rosa M. Badia
+  affiliation: BSC-CNS
+  abstract: |-
+    Task-based programming defends that provides a simple programming
+    approach that leverages the computing infrastructure and reduces
+    global synchronizations. Since its inception has been extensively
+    applied to different computing platforms.  In particular, at BSC we
+    have developed instances of programming models for so diverse
+    infrastructures as the grid, multicore or the Cell processor, clusters
+    and large supercomputers, to the digital continuum or hybrid classic-quantum
+    approaches.  However, is the programming model so simple? What
+    the end-users say about it?  What are the issues that each computing
+    platform pose?  Is an autonomous runtime taking all decisions
+    appreciated by end-users? How can we debug or improve the performance
+    of distributed applications? The talk will present a perspective
+    overview of these topics and our views for the next future.
+- label: Keynote II
+  title: Fortran and the OpenMP API in a Modern GPU World
+  speaker: Michael Klemm
+  affiliation: AMD
+  abstract: "Modern day supercomputers are massively parallel, heterogeneous\n\tsystems
+    that employ accelerators (mostly GPU) to provide\n\tadditional compute and memory
+    performance to applications.  While\n\tC/C++, but also Python, gain traction in
+    the HPC domain, Fortran\n\tcontinues to have a large developer base with new high-performance\n\tcode
+    written every day.  In this world, the OpenMP Application\n\tProgramming Interface
+    is one of the key components to support\n\tapplication developers and their need
+    to write portable and\n\tperformant code for such systems, especially in the context
+    of\n\tlarge Fortran codes.  We will review the evolution of the OpenMP\n\tAPI
+    from its early days in 1997 to the present day and how it\n\tsupports large scale,
+    heterogeneous applications.  We will recap\n\thow OpenMP initially supported portable
+    multi-threading (for\n\tFortran) and how it was extended to support task parallelism,\n\tsingle-instruction
+    multiple-data, and heterogeneous computing.  We\n\twill also shortly touch on
+    future plans for the OpenMP API\n\tversions 6.1 and 7.0.  The review of OpenMP
+    features will be\n\tembedded in the journey of AMD to build the first and second\n\texascale
+    system, based on AMD EPYC(tm) Processors and AMD\n\tInstinct(tm) accelerators
+    as well as a modern Fortran compiler\n\tbased on LLVM Flang.  Buckle up and enjoy
+    the ride!"
+- label: Keynote III
+  title: 'Asychronous tasks: the cornerstone of targeting HPC on emerging architectures'
+  speaker: Nick Brown
+  affiliation: EPCC
+  abstract: |-
+    Whilst emerging architectures, such as the Cerebras WSE, were initially designed with AI/ML workloads in mind
+    their underlying capability results in great potential for traditional HPC too. However, a major challenge is in the
+    programming of these technologies not-least because approaching these architectures as traditional
+    imperative/BSP-style is a poor fit and results in slow performance. In this talk I will describe work targeting these
+    architectures for existing HPC workloads, written in Fortran, with programmer's codes requiring minimal modifications.
+    I will describe how we see that the target execution model naturally follows that of highly asynchronous many-tasks,
+    and how we can automate via MLIR the mapping to this paradigm from the imperative view.

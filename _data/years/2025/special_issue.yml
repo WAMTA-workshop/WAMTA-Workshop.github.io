@@ -1,0 +1,21 @@
+---
+nav_hidden: true
+title: Special issue
+description: The authors of accpted papers in the workshop proceedings are invited
+  to submit extended papers with 50% new content to the special issue "Recent advances
+  in Asynchronous Many Task Runtime Systems" published in [SN Computer Science](https://link.springer.com/journal/42979).
+editors:
+- Patrick Diehl (Los Alamos National Laboratory)
+- Jonas Posner (University of Kassel)
+- Qinglei Cao (Saint Louis University)
+submission: Authors need to submit their work through [Editorial manager](https://www.editorialmanager.com/sncs/default2.aspx).
+  Submissions need to follow the journals [author guidelines](https://link.springer.com/journal/42979/submission-guidelines#Instructions%20for%20Authors).
+  The LaTeX template is available [here](https://www.springernature.com/gp/authors/campaigns/latex-author-support).
+dates:
+- label: Submission Deadline
+  value: "<del>May 30th</del> June 15th."
+- label: Notification of Acceptance (Paper)
+  value: June 30th
+- label: Camera-ready paper
+  value: July 16th
+show_contact: true

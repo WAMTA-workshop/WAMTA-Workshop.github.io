@@ -1,0 +1,58 @@
+---
+description: "Supercomputers are breaking the exascale barrier, and tremendous\namounts
+  of work have been invested into identifying and overcoming the\nchallenges of the
+  exascale era. These challenges include\nload-balancing, fast data transfers, and
+  efficient resource\nutilization. Task-based models and runtime systems have shown
+  that it\nis possible to address these challenges by providing additional\nmechanisms
+  such as oversubscription, task/data locality, shared\nmemory, and data dependence-driven
+  execution. \n\nThis workshop explores the advantages of task-based programming on\nactual
+  and future HPC systems. It will gather developers, users, and\nproponents of these
+  models and systems to share experiences, discuss\nhow they meet the challenges posed
+  by Exascale system architectures,\nand explore opportunities for increased performance,
+  robustness, and\nfull-system utilization."
+special_issue: |-
+  **Special Issue in SN Computer Science**
+
+  Authors of accepted papers are invited to submit an extended paper to a special issue in SN Computer Science. Further information will be provided [here](https://wamta26.stellar-group.org/special-issue).
+contact: |-
+  **Contact**:
+  If you have any problems or questions, please contact us via e-mail at: erwin.laure@mpcdf.mpg.de
+dates:
+- label: Abstract Submission Deadline (extended)
+  value: October 10, 2025
+- label: Paper Submission Deadline
+  value: January 16, 2026
+- label: Notification of Acceptance
+  value: January 30, 2026
+- label: Camera-ready paper
+  value: February 13, 2026
+sections:
+- title: Abstracts
+  body: |-
+    Authors are invited to submit abstracts and indicate if they will
+    submit a short or full paper. This is a two step process and authors
+    will first submit the abstract (October 10th, 2025) and later submit
+    the short or full paper (January 16th, 2026).
+- title: Full Papers
+  body: |-
+    Authors are invited to submit original papers of between ten and
+    twelve pages, including text, the references section, appendices, and
+    figures.
+- title: Short Papers
+  body: |-
+    Alternatively, authors submit position papers and work-in-progress as
+    short papers of at most 6 pages in length, which include tables,
+    figures, references, and appendices.
+
+    At least three program committee members will review each
+    submission. Reviews will be double-blind, and papers will be assessed
+    for quality, relevance, and presentation of contributions. Springer
+    LNCS will publish the accepted papers.
+- title: Best Paper/Poster Award
+  body: |-
+    The Best Paper Award will be selected on the basis of explicit
+    recommendations of the reviewers and their scoring towards the paper’s
+    originality and quality.
+submission: |-
+  Authors need to submit their work through [EasyChair](https://easychair.org/conferences?conf=wamta26). Submissions must
+  be in [Springer LNCS format](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines).

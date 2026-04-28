@@ -1,3 +1,6 @@
 ---
-slide_id: 2
+layout: page
+slide_id: 0
 ---
+
+{% include shortcourse.md %}

@@ -1,3 +1,7 @@
 ---
-slide_id: 4
+layout: page
+slide_id: 0
+year: "2023"
 ---
+
+{% include program.md %}

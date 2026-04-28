@@ -1,3 +1,6 @@
 ---
-slide_id: 10
+layout: page
+slide_id: 0
 ---
+
+{% include events.md %}

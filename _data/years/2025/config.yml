@@ -1,0 +1,38 @@
+---
+full_title: Workshop on Asynchronous Many-Task Systems and Applications
+short_title: WAMTA 2025
+important_dates_card_suffix: '(AoE)'
+email: qinglei.cao@slu.edu
+description: The workshop on Asynchronous Many-Task Systems and Applications brings
+  together AMT developers and application developers.
+location: St. Louis, MO, USA
+date: February 19th to 21st, 2025
+logo_path: "/assets/years/2025/images/logo.png"
+slideshow:
+- id: 0
+  image_path: "/assets/years/2025/images/slideshow/image0.png"
+  description:
+  photographer_name:
+  photographer_link:
+  active: false
+- id: 1
+  image_path: "/assets/years/2025/images/slideshow/image1.jpg"
+  description:
+  photographer_name:
+  photographer_link:
+  active: false
+- id: 2
+  image_path: "/assets/years/2025/images/slideshow/image2.jpg"
+  description:
+  photographer_name:
+  photographer_link:
+  active: false
+- id: 3
+  image_path: "/assets/years/2025/images/slideshow/image3.jpg"
+  description:
+  photographer_name:
+  photographer_link:
+  active: false
+social_media:
+  facebook_link:
+  twitter_link:

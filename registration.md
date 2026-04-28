@@ -1,3 +1,6 @@
 ---
-slide_id: 5
+layout: page
+slide_id: 0
 ---
+
+{% include registration.md %}

@@ -1,0 +1,25 @@
+# Template for a year's short course data. WAMTA 2024 did not host its own short
+# course; the original wamta24.icl.utk.edu/shortcourse archived a stale copy of
+# the 2023 course. To populate a real short course for this year, uncomment and
+# fill the fields below.
+#
+# nav_hidden: true              # Set to true to keep the page reachable but
+#                               # absent from the top menu (matches WAMTA's
+#                               # original convention for short courses).
+# title: 'Short course: <Course Title>'
+# description: |-
+#   Markdown-formatted intro paragraph(s). Links and emphasis are allowed,
+#   e.g. given by [Instructor](https://example.org).
+# topics:
+#   - First topic
+#   - Second topic
+# additional_topics:
+#   - Optional advanced topic
+#   - Another advanced topic
+# logistics: |-
+#   **Important Dates**:
+#
+#   **Registration:** YYYY-MM-DD ([Registration link](https://example.org))
+#
+#   **Dates** Date range
+# show_contact: true

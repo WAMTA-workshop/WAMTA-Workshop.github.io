@@ -1,0 +1,18 @@
+---
+intro: The venue for all talks is the University of Tennessee, Knoxville Student Union
+  Building, **Room 169**, 1502 Cumberland Avenue, Knoxville, TN 37996.
+social_events: []
+schedule:
+  kind: pdf
+  url: "/assets/years/2024/timetable.pdf"
+  file_name: timetable.pdf
+links:
+- label: Schedule
+  url: "/assets/years/2024/timetable.pdf"
+- label: Book of Abstracts
+  url: "/assets/years/2024/wamta24_abstracts.pdf"
+- label: Collection of slides and posters
+  url: https://zenodo.org/communities/wamta24
+- label: Group picture
+  url: "/assets/years/2024/WAMTA-group-full.jpg"
+show_contact: true

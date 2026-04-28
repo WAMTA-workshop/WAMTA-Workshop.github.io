@@ -1,0 +1,19 @@
+---
+full_title: Workshop on Asynchronous Many-Task Systems and Applications 2026
+short_title: WAMTA 26
+email: diehlpk@lanl.gov
+description: The workshop on Asynchronous Many-Task Systems and Applications brings
+  together AMT developers and application developers.
+location: Garching near Munich, Germany
+date: February 16th to 18th, 2026
+logo_path: "/assets/years/2026/images/logo.png"
+slideshow:
+- id: 0
+  image_path: "/assets/years/2026/images/slideshow/munich_skyline.jpg"
+  description:
+  photographer_name:
+  photographer_link:
+  active: true
+social_media:
+  facebook_link:
+  twitter_link:

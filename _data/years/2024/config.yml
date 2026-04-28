@@ -1,0 +1,19 @@
+---
+full_title: Workshop on Asynchronous Many-Task Systems and Applications 2024
+short_title: WAMTA 24
+email: patrickdiehl@lsu.edu
+description: The workshop on Asynchronous Many-Task Systems and Applications brings
+  together AMT developers and application developers.
+location: Knoxville, TN, USA
+date: February 14th to 16th, 2024
+logo_path: "/assets/years/2024/images/logo.png"
+slideshow:
+- id: 0
+  image_path: "/assets/years/2024/images/slideshow/image0.png"
+  description:
+  photographer_name:
+  photographer_link:
+  active: true
+social_media:
+  facebook_link:
+  twitter_link:

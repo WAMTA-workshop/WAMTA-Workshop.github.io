@@ -1,0 +1,110 @@
+---
+intro: |-
+  The venue for all talks is at the [Max Planck Computing and Data Facility,
+  on Research Campus Garching, Gießenbachstrasse 2 85748 Garching near Munich, Germany. ** Access via Isarstrasse **](https://www.mpcdf.mpg.de/contact/directions). Lecture hall on ground level next to the main entrance to building D2.
+social_events:
+- label: Poster Reception on Monday evening in the showroom of the Max Planck Institute
+    of Plasmaphysics
+  url: events
+- label: Conference Dinner on Tuesday evening in the oldest brewery of the planet,
+    Weihenstephan
+  url: events
+schedule:
+  kind: table
+  headings:
+  - Time
+  - Mon Feb 16 (Day 1)
+  - Tue Feb 17 (Day 2)
+  - Wed Feb 18 (Day 3)
+  rows:
+  - - '08:00 AM'
+    - "*Registration / Coffee and Pastries*"
+    - "*Registration / Coffee and Pastries*"
+    - "*Registration / Coffee and Pastries*"
+  - - '08:50 AM'
+    - Welcoming Remarks (Erwin Laure)
+    - ''
+    - ''
+  - - '09:00 AM'
+    - |-
+      *Keynote 1, Chair: E. Laure*
+      **Michael Klemm:** Fortran and the OpenMP API in a Modern GPU World
+    - |-
+      *Keynote 2, Chair: M. Schulz*
+       **Rosa Badia**: Task-based programming models: tradeoffs between granularity and computing platforms
+    - |-
+      *Keynote 3, Chair: C. Junghans*
+       **Nick Brown**: Asynchronous tasks: the cornerstone of targeting HPC on emerging architectures
+  - - 10:00 AM
+    - "*Coffee*"
+    - "*Coffee*"
+    - "*Coffee*"
+  - - ''
+    - "*Session 1, Chair: M. Rampp*"
+    - "*Session 3, Chair: J. Posner*"
+    - "*Session 5, Chair: C. Junghans*"
+  - - 10:30 AM
+    - "**Alexander Strack:** Accelerating GPRat: Asynchronous, Task-Based GPU Acceleration
+      for Gaussian Process Regression with HPX"
+    - "**Dominik Huber:** Towards Dynamic Resource Management with Charm++"
+    - "**Joseph Schuchart:** Multiresolution Analysis using Data-Flow Programming"
+  - - 11:00 AM
+    - "**Vincent Arcila:** Hierarchical Scheduling for Composable Affinity-Aware Policies
+      in Task-Based Runtimes"
+    - "**Rüdiger Nather:** Finding Conservation Laws of Large Dynamical Systems with
+      Tasks and Futures: A Case Study in Utilizing Dynamic Data Dependencies"
+    - "**Nicolas Ducarton:** Abstract communicators for task based runtime systems"
+  - - 11:30 AM
+    - ''
+    - "**Joseph Schuchart:** Using C++ Generators in Dataflow Broadcast"
+    - ''
+  - - 12:00 PM
+    - "*Lunch*"
+    - "*Lunch*"
+    - "*Lunch*"
+  - - ''
+    - "*Session 2, Chair: C. Junghans*"
+    - "*Session 4, Chair: M. Rampp*"
+    - "*Session 6, Chair: M. Rampp *"
+  - - 01:00 PM
+    - "**Jose Gracia:** Evaluating MPI and OpenMP for global task dependencies across
+      processes"
+    - "**Linus Batel:** From Prompts to Performance: Evaluating LLMs for Task-based
+      Parallel Code Generation"
+    - "**Zhuowei Gu:** Merging Parameterized Task Graphs in PaRSEC through Recursive
+      JDF Composition"
+  - - 01:30 PM
+    - "**Jonas Posner:** Exploring Performance-Productivity Trade-offs in AMT Runtimes:
+      A Task Bench Study of Itoyori, and MPI"
+    - "**Philippe Swartvagher:** First Experiments to Evaluate the Relevance of Task-based
+      Runtime Systems to Implement Large Language Model Applications"
+    - "**Qiao Zhang:** Leveraging PaRSEC for Task-Based Heterogeneous Computing in
+      Python and Julia"
+  - - 02:00 PM
+    - "**Nicolas Brieuc:** Managing Explicit Communications Within a Sequential Task
+      Flow Paradigm"
+    - "**Mia Reitz:** Silent Data Corruption Protection through Efficient Task Replication"
+    - "*Closing remarks*"
+  - - 02:30 PM
+    - "*Coffee*"
+    - "*Coffee*"
+    - "*Coffee*"
+  - - 03:00 PM
+    - Quantum Computer Tour (until 4:30 PM)
+    - 'Panel: Novel architectures for AMT, *Chair: C. Junghans* (until 3:45 PM)'
+    - ''
+  - - Evening
+    - Reception (05:30 PM - 08:00 PM)
+    - |-
+      05:30 PM: Bus to Brewery
+
+              06:00 PM - 09:00 PM: Tour / Banquet
+
+              09:00 PM: Bus to conference venue
+    - ''
+links:
+- label: Schedule (pdf)
+  url: "/assets/years/2026/timetable.pdf"
+- label: Book of Abstracts (pdf)
+  url: "/assets/years/2026/book-of-abstracts.pdf"
+show_contact: true

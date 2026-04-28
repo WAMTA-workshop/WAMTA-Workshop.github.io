@@ -1,0 +1,25 @@
+{% assign members = include.members %}
+<div class="card">
+  <div class="card-header text-white bg-inverse">
+    {% if include.icon %}<i class="fa {{ include.icon }} mr-3" aria-hidden="true"></i>{% endif %}<strong>{{ include.title }}</strong>
+  </div>
+  {% if members %}
+    {% for member in members %}
+      <div class="card-block bg-faded committee">
+        <p>
+          {% if member.homepage and member.homepage != "" %}
+            <a href="{{ member.homepage }}"><strong>{{ member.name }}</strong></a>
+          {% else %}
+            <strong>{{ member.name }}</strong>
+          {% endif %}
+        </p>
+        {% if member.org %}<p class="card-subtitle text-muted" style="font-size: 90%;">{{ member.org }}</p>{% endif %}
+      </div>
+    {% endfor %}
+  {% else %}
+    <div class="card-block bg-faded committee">
+      <p><strong>TBA</strong></p>
+      <p class="card-subtitle text-muted" style="font-size: 90%;">TBA</p>
+    </div>
+  {% endif %}
+</div>
