@@ -4,9 +4,18 @@ css: ./assets/hotweb.css
 current_year: "2026"
 
 markdown: kramdown
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "workshop-page"
+      slide_id: 0
 exclude:
   - Gemfile
   - Gemfile.lock
+  - README.md
 
 timezone: America/Eastern
 google_analytics:

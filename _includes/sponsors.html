@@ -1,7 +1,4 @@
 <div class="row sponsor">
-  {% assign year = page.year | default: site.current_year %}
-  {% assign year_data = site.data.years[year] %}
-  {% assign conference = year_data.conference %}
   <div class="col">
     <h5>SPONSORS</h5>
     {% if conference.sponsors == nil %}

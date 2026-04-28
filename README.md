@@ -1,25 +1,42 @@
-# Jekyll-Conference-Template
+# WAMTA Workshop Website
 
-An academic conference website template built using Jekyll.
+The multi-year WAMTA workshop website built using Jekyll. The current edition is selected by `current_year` in `_config.yml`.
 
 ## Features
 
-- A data file (`_data/conference.yml`) to configure all conference information.
-    - `full_title`: conference fullname e.g., First xxx conference on xxxx, 2017.
-    - `short_title`: conference shortname e.g., xxxx2017
-    - `descriptioin`: short description about the conference (< 160 char)
-    - `location`: conference location
-    - `logo_path`: conference logo
-    - `slideshow`: images slideshow
-    - `navbar`: navigation menu.
-    - `news`: news section.
-    - `sponsors`: sponsor section.
-    - `deadlines`: important dates of deadlines, pass-due date will be automatically printed with del line.
-    - `social_media`: social media on the navbar. (current support facebook and twitter.)
-    - `organizing_committee`: organzizing committee
-    - `steering_committee`: steering committee
-    - `technical_program_committee`: technical program committee
-    - more configuratioins to come.
+- Year-specific data files live in `_data/years/{year}/`.
+    - `conference.yml`: conference information for each WAMTA edition.
+        - `full_title`: conference full name e.g., Workshop on Asynchronous Many-Task Systems and Applications 2026.
+        - `short_title`: conference short name e.g., WAMTA 26
+        - `description`: short description about the conference (< 160 char)
+        - `location`: conference location
+        - `logo_path`: conference logo
+        - `slideshow`: image slideshow
+        - `navbar`: navigation menu.
+        - `news`: news section.
+        - `sponsors`: sponsor section.
+        - `deadlines`: important deadline dates; past-due dates will be automatically printed with a strikethrough.
+        - `social_media`: social media on the navbar. (currently supports Facebook and Twitter.)
+        - `organizing_committee`: organizing committee
+        - `steering_committee`: steering committee
+        - `technical_program_committee`: technical program committee
+    - `schedule.yml`: structured schedule/timetable data for that year.
+        - `date`: machine-readable date for a schedule day.
+        - `dateReadable`: display label for a schedule day.
+        - `timeslots`: list of scheduled sessions or services.
+        - `startTime`, `endTime`: time range for a timeslot.
+        - `title`: timeslot or event title.
+        - `type`: timeslot or presentation type.
+        - `speaker`, `chair`: speaker and chair labels for a timeslot.
+        - `events`: nested list of presentations in a timeslot.
+        - `speakers`: event speaker metadata.
+    - `presentations.yml`: structured presentation metadata for that year.
+        - `id`: presentation identifier.
+        - `title`: presentation title.
+        - `speakers`: presentation speaker metadata.
+        - `type`: presentation type.
+    - more configurations to come.
+- Year-specific page bodies live in `_includes/pages/{year}/...` and are resolved by `_layouts/workshop-page.html`.
 - Google Analytics: in `_config.yml`
 - Font-awesome
 - Bootstrap v4.
@@ -41,14 +58,14 @@ An academic conference website template built using Jekyll.
 
 ## Usage
 
-### with Jekyll Admin.
+### With Jekyll Admin.
 
 
 ## TODO
 
- - [ ] add https://www.timeanddate.com/ link to deadlines.
- - [ ] seperate some layouts/includes into a theme, make the project extensible with different themes.
- - [x] Jekyll-admin integrated
- - [ ] use Jekyll posts to update news.
- - [ ] clean Jekyll pages, put html code into layout/includes, pure markdown in pages. 
- - [ ] Makefile integration for docker run, ssh upload, rsync
+ - [ ] Add https://www.timeanddate.com/ link to deadlines.
+ - [ ] Separate some layouts/includes into a theme, make the project extensible with different themes.
+ - [x] Jekyll Admin integrated
+ - [ ] Use Jekyll posts to update news.
+ - [ ] Clean Jekyll pages, put HTML code into layout/includes, pure Markdown in pages.
+ - [ ] Makefile integration for Docker run, SSH upload, rsync
