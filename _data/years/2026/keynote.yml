@@ -23,23 +23,8 @@ talks:
   title: Fortran and the OpenMP API in a Modern GPU World
   speaker: Michael Klemm
   affiliation: AMD
-  abstract: "Modern day supercomputers are massively parallel, heterogeneous\n\tsystems
-    that employ accelerators (mostly GPU) to provide\n\tadditional compute and memory
-    performance to applications.  While\n\tC/C++, but also Python, gain traction in
-    the HPC domain, Fortran\n\tcontinues to have a large developer base with new high-performance\n\tcode
-    written every day.  In this world, the OpenMP Application\n\tProgramming Interface
-    is one of the key components to support\n\tapplication developers and their need
-    to write portable and\n\tperformant code for such systems, especially in the context
-    of\n\tlarge Fortran codes.  We will review the evolution of the OpenMP\n\tAPI
-    from its early days in 1997 to the present day and how it\n\tsupports large scale,
-    heterogeneous applications.  We will recap\n\thow OpenMP initially supported portable
-    multi-threading (for\n\tFortran) and how it was extended to support task parallelism,\n\tsingle-instruction
-    multiple-data, and heterogeneous computing.  We\n\twill also shortly touch on
-    future plans for the OpenMP API\n\tversions 6.1 and 7.0.  The review of OpenMP
-    features will be\n\tembedded in the journey of AMD to build the first and second\n\texascale
-    system, based on AMD EPYC(tm) Processors and AMD\n\tInstinct(tm) accelerators
-    as well as a modern Fortran compiler\n\tbased on LLVM Flang.  Buckle up and enjoy
-    the ride!"
+  abstract: |-
+    Modern day supercomputers are massively parallel, heterogeneous systems that employ accelerators (mostly GPU) to provide additional compute and memory performance to applications.  While C/C++, but also Python, gain traction in the HPC domain, Fortran continues to have a large developer base with new high-performance code written every day.  In this world, the OpenMP Application Programming Interface is one of the key components to support application developers and their need to write portable and performant code for such systems, especially in the context of large Fortran codes.  We will review the evolution of the OpenMP API from its early days in 1997 to the present day and how it supports large scale, heterogeneous applications.  We will recap how OpenMP initially supported portable multi-threading (for Fortran) and how it was extended to support task parallelism, single-instruction multiple-data, and heterogeneous computing.  We will also shortly touch on future plans for the OpenMP API versions 6.1 and 7.0.  The review of OpenMP features will be embedded in the journey of AMD to build the first and second exascale system, based on AMD EPYC(tm) Processors and AMD Instinct(tm) accelerators as well as a modern Fortran compiler based on LLVM Flang.  Buckle up and enjoy the ride!
 - label: Keynote III
   title: 'Asychronous tasks: the cornerstone of targeting HPC on emerging architectures'
   speaker: Nick Brown

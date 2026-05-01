@@ -1,0 +1,18 @@
+intro: TBA
+sections:
+  - title: Conference Location
+    body: TBA
+    # Optional embedded Google Maps iframe:
+    # map:
+    #   src: "https://www.google.com/maps/embed?pb=..."
+    #   width: '600'
+    #   height: '450'
+  # - title: Accommodation
+  #   body: |-
+  #     Conference lodging has been reserved as follows:
+  #
+  #     * <Hotel Name> \\
+  #       <Address line 1> \\
+  #       <Address line 2>
+  # - title: Travel by air
+  #   body: TBA

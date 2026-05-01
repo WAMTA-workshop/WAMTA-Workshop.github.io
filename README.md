@@ -59,6 +59,18 @@ Each `_data/years/<year>/` directory is split by concern:
   toggles; `program.yml` contains `intro`, `social_events`, `schedule`,
   `links`, and `show_contact`; `keynote.yml` contains `talks`; and
   `events.yml` contains `items`.
+- `program.yml`'s `schedule:` block has two shapes. `kind: pdf` embeds a PDF
+  via `url` and `file_name`. `kind: timetable` describes a structured
+  multi-day grid with named day-keys: top-level `days:` lists each column as
+  `{ key, label }` and `rows:` is a list of row mappings keyed by `time:`
+  plus the day keys (or `all:` to repeat one cell across every day). Each
+  cell is itself a mapping with `kind:` set to one of `meta` (italic
+  break/heading text), `keynote` (`number`, `chair`, `speaker`, `title`),
+  `talk` (`speaker`, `title`), `event` (`label`, optional `chair` and
+  `note`), or `schedule` (`items:` list of bullet strings rendered with
+  `<br>` separators). The renderer (`_includes/schedule-table.html` plus
+  `_includes/schedule-cell.html`) owns all bold/italic/`<br>` markup, so
+  cells must contain plain prose only.
 
 Shared page includes render those semantic fields directly. YAML owns facts and
 prose; includes own layout. Do not put Bootstrap classes, raw layout HTML,

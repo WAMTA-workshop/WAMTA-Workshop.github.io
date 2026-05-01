@@ -1,0 +1,24 @@
+description: TBA
+# Optional fields:
+# special_issue: |-
+#   **Special Issue in <Journal>**
+#
+#   Authors of accepted papers are invited to submit ...
+# contact: |-
+#   **Contact**:
+#   If you have any problems or questions, please contact us via e-mail at: <email>
+# submission: |-
+#   Authors need to submit their work through [EasyChair](https://easychair.org/conferences?conf=wamta27).
+#   Submissions must be in [Springer LNCS format](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines).
+# sections:
+#   - title: Abstracts
+#     body: |-
+#       Authors are invited to submit abstracts ...
+#   - title: Full Papers
+#     body: |-
+#       Authors are invited to submit original papers of between ten and twelve pages ...
+# dates:
+#   - { label: Abstract Submission Deadline, value: TBA }
+#   - { label: Paper Submission Deadline,    value: TBA }
+#   - { label: Notification of Acceptance,   value: TBA }
+#   - { label: Camera-ready paper,           value: TBA }

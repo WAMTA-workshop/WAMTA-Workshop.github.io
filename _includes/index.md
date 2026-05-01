@@ -17,7 +17,7 @@
 
 {{ home.objectives }}
 
-{% if home.topics %}
+{% if home.topics.size > 0 %}
 The topics of interest include, but are by no means limited to:
 
 {% for topic in home.topics -%}
@@ -27,7 +27,7 @@ The topics of interest include, but are by no means limited to:
 
 {{ home.artifacts }}
 
-{% if home.previous_events != empty %}
+{% if home.previous_events.size > 0 %}
 Previous events:
 
 {% for event in home.previous_events -%}

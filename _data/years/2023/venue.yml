@@ -21,10 +21,10 @@ sections:
     width: '600'
     height: '450'
 - title:
-  body: "* For any questions or concern, please call the hotel at (866) 610-2665.\n*
-    Rate: $119/night (includes breakfast at Shaquille R. O'Neal Lodge from 6:00 AM
-    until 9:30 AM). \n* Please [reserve online](https://reservations.travelclick.com/110626?groupID=3574762)
-    by January 14th, 2023, to secure this rate."
+  body: |-
+    * For any questions or concern, please call the hotel at (866) 610-2665.
+    * Rate: $119/night (includes breakfast at Shaquille R. O'Neal Lodge from 6:00 AM until 9:30 AM).
+    * Please [reserve online](https://reservations.travelclick.com/110626?groupID=3574762) by January 14th, 2023, to secure this rate.
 - title: Travel by air
   body: |-
     Baton Rouge is easily accessible via the [Baton Rouge Metropolitan Airport](http://www.flybtr.com/) with non-stop service from national gateways such as Atlanta, Dallas, Memphis, Charlotte, and Houston provided by Delta, United, American, and US Airways. [The Louis Armstrong New Orleans International Airport](https://flymsy.com/) also provides air service and is 67 miles from Baton Rouge.

@@ -1,0 +1,17 @@
+title: WELCOME TO WAMTA 2027!
+lead: TBA
+overview: TBA
+objectives: TBA
+topics:
+  - TBA
+# Optional fields:
+# artifacts: Collection of [artifacts](https://zenodo.org/communities/wamta27/).
+# previous_events:
+#   - label: WAMTA 2026
+#     url: https://wamta26.stellar-group.org/
+#     host: "[MPCDF](https://www.mpcdf.mpg.de/)"
+#     artifacts_url: https://zenodo.org/communities/wamta26
+show_contact: true
+show_important_dates: true
+show_news: true
+show_sponsors: true

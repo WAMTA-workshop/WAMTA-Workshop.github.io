@@ -1,0 +1,3 @@
+# Each entry: { date: YYYY-MM-DD or TBA, text: ..., timezone (optional): ... }
+# Past dates auto-strikethrough based on `site.time` vs `date`.
+[]

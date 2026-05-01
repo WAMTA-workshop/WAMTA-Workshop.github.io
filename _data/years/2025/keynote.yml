@@ -5,18 +5,10 @@ talks:
     problem (or both)?
   speaker: Alan Edelman
   affiliation: MIT
-  abstract: "For years I was sad that not enough hard work went into making HPC much
-    easier on the human, and much more portable. I kind of felt that there was too
-    much chasing \"machoflops\" and not enough software engineering that would result
-    in bringing more programmers to HPC. My benchmark was how many undergraduates
-    are using HPC for interesting projects. Another observation was that it seemed
-    infrastructure was rarely funded or encouraged.\n\n        \n\nJulia has been
-    and is making strides in this direction, but new to the table is AI (something
-    this tech lover turned luddite wanted to avoid always fearful this bandwagon is
-    going to collapse and collapse hard.) I will talk about the original ongoing efforts
-    and our SmartSolve (Funded by DARPA DIAL) project that we hope will bring everything
-    together for HPC. Most importantly we will encourage everyone to participate;
-    we can not do this entirely ourselves and value your contributions."
+  abstract: |-
+    For years I was sad that not enough hard work went into making HPC much easier on the human, and much more portable. I kind of felt that there was too much chasing "machoflops" and not enough software engineering that would result in bringing more programmers to HPC. My benchmark was how many undergraduates are using HPC for interesting projects. Another observation was that it seemed infrastructure was rarely funded or encouraged.
+
+    Julia has been and is making strides in this direction, but new to the table is AI (something this tech lover turned luddite wanted to avoid always fearful this bandwagon is going to collapse and collapse hard.) I will talk about the original ongoing efforts and our SmartSolve (Funded by DARPA DIAL) project that we hope will bring everything together for HPC. Most importantly we will encourage everyone to participate; we can not do this entirely ourselves and value your contributions.
 - label: Keynote II
   title: 'Task-Graphs: Why aren''t we all using them?'
   speaker: Christian Trott (SNL)
@@ -38,22 +30,9 @@ talks:
     Runtime Systems'
   speaker: Hatem Ltaief
   affiliation: KAUST
-  abstract: "Scientific computing is increasingly confronted with the challenge of
-    orchestrating highly complex simulations and AI-driven workflows on heterogeneous
-    hardware systems. The sheer scale of modern scientific applications—ranging from
-    computational astronomy to genomic analysis and climate modeling—introduces difficult
-    data dependencies, irregular execution patterns, and severe performance bottlenecks.
-    Traditional static execution models when faced with complex irregular workflows
-    struggle to efficiently harness the computational power of emerging hardware architectures,
-    leading to suboptimal resource utilization and scalability limitations.\n\n    \n\nIn
-    this talk, we explore how dynamic runtime systems provide a paradigm shift, transforming
-    computational chaos into a structured and efficient cosmos. We delve into research
-    on task-based programming models, asynchronous execution, and mixed-precision
-    algorithms, drawing from state-of-the-art developments in the field. By leveraging
-    dynamic scheduling, data locality optimizations, and adaptive precision techniques,
-    we demonstrate how these runtime systems mitigate bottlenecks, improve energy
-    efficiency, and enable unprecedented scalability on modern supercomputing platforms.\n\n
-    \   \n\nBy bridging the gap between numerical methods, system software, and cutting-edge
-    hardware, this talk provides a roadmap for orchestrating complex scientific applications
-    with dynamic, intelligent, and scalable runtime systems—turning computational
-    disorder into scientific discovery."
+  abstract: |-
+    Scientific computing is increasingly confronted with the challenge of orchestrating highly complex simulations and AI-driven workflows on heterogeneous hardware systems. The sheer scale of modern scientific applications—ranging from computational astronomy to genomic analysis and climate modeling—introduces difficult data dependencies, irregular execution patterns, and severe performance bottlenecks. Traditional static execution models when faced with complex irregular workflows struggle to efficiently harness the computational power of emerging hardware architectures, leading to suboptimal resource utilization and scalability limitations.
+
+    In this talk, we explore how dynamic runtime systems provide a paradigm shift, transforming computational chaos into a structured and efficient cosmos. We delve into research on task-based programming models, asynchronous execution, and mixed-precision algorithms, drawing from state-of-the-art developments in the field. By leveraging dynamic scheduling, data locality optimizations, and adaptive precision techniques, we demonstrate how these runtime systems mitigate bottlenecks, improve energy efficiency, and enable unprecedented scalability on modern supercomputing platforms.
+
+    By bridging the gap between numerical methods, system software, and cutting-edge hardware, this talk provides a roadmap for orchestrating complex scientific applications with dynamic, intelligent, and scalable runtime systems—turning computational disorder into scientific discovery.

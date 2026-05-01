@@ -1,0 +1,12 @@
+# Template for a year's social-events page. Uncomment and fill in to enable
+# the Events nav item (or set `nav_hidden: true` to keep the page reachable
+# but absent from the top menu).
+#
+# nav_hidden: true
+# items:
+#   - title: <Event title>
+#     alt: <Image alt text>
+#     image_path: "/assets/years/2027/events/<image>.png"
+#   - title: <Another event>
+#     alt: <Image alt text>
+#     image_path: "/assets/years/2027/events/<image>.png"

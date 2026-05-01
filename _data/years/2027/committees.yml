@@ -1,0 +1,21 @@
+# Optional `labels:` overrides per-year card titles, for example:
+# labels:
+#   program_chair: Local Organizers
+#   steering_committee: Scientific Committee
+#   technical_program_chair: Technical Program Chair
+#   technical_program_committee: Technical Program Committee
+#   webmaster: Webmaster
+#
+# Each group is a list of `{ name, org, homepage }`. Drop a group entry to
+# render that card as TBA. Drop the `homepage` to render the name without a
+# link.
+program_chair:
+  - { name: TBA, org: TBA, homepage: }
+steering_committee:
+  - { name: TBA, org: TBA, homepage: }
+technical_program_chair:
+  - { name: TBA, org: TBA, homepage: }
+technical_program_committee:
+  - { name: TBA, org: TBA, homepage: }
+webmaster:
+  - { name: TBA, org: TBA, homepage: }

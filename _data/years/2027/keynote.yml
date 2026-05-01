@@ -1,0 +1,15 @@
+talks: []
+# Each talk is a mapping. Required: label, title, speaker, abstract.
+# Optional: affiliation, homepage, materials (list of { label, url }).
+#
+# talks:
+#   - label: Keynote I
+#     title: TBA
+#     speaker: TBA
+#     affiliation: TBA
+#     homepage: https://example.org
+#     abstract: |-
+#       Markdown-formatted abstract. Multiple paragraphs OK.
+#     materials:
+#       - { label: Slides, url: "/assets/years/2027/keynote-i-slides.pdf" }
+#       - { label: Video,  url: "https://youtu.be/..." }

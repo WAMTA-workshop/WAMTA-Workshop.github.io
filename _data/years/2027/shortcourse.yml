@@ -1,0 +1,22 @@
+# Template for a year's short course data. Uncomment and fill in to enable the
+# Short course nav item (or set `nav_hidden: true` to keep the page reachable
+# but absent from the top menu, matching WAMTA's convention).
+#
+# nav_hidden: true
+# title: 'Short course: <Course Title>'
+# description: |-
+#   Markdown-formatted intro paragraph(s). Links and emphasis are allowed,
+#   e.g. given by [Instructor](https://example.org).
+# topics:
+#   - First topic
+#   - Second topic
+# additional_topics:
+#   - Optional advanced topic
+#   - Another advanced topic
+# logistics: |-
+#   **Important Dates**:
+#
+#   **Registration:** YYYY-MM-DD ([Registration link](https://example.org))
+#
+#   **Dates:** Date range
+# show_contact: true

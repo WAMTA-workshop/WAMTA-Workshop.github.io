@@ -6,7 +6,7 @@
 {% if program %}
 {{ program.intro | markdownify }}
 
-{% if program.social_events != empty %}
+{% if program.social_events.size > 0 %}
 <div class="text-info">Social Events:</div>
 <ul>
 {% for event in program.social_events %}
@@ -26,7 +26,7 @@
 {% endif %}
 {% endif %}
 
-{% if program.links != empty %}
+{% if program.links.size > 0 %}
 <ul>
 {% for link in program.links %}
   <li><a href="{{ link.url }}">{{ link.label }}</a></li>

@@ -1,13 +1,16 @@
 ---
 sections:
 - title: Submission of abstracts and posters
-  body: "Submitted talks are 20 minutes (15 minutes presentation and 5 minutes for
-    questions). Please use EasyChair for your submission. \nThe submission should
-    not exceed 500 words and should not include references. Please indicate by the
-    topic if you are submitting a poster or talk. \n\nTo submit your abstract, please
-    follow below link to the submission site:\n\n[**Abstract Submission Site**](https://easychair.org/conferences/?conf=wamta23)\n\nNote
-    that at least one of the authors of each abstract accepted for\npresentation in
-    WAMTA 23 must be registered."
+  body: |-
+    Submitted talks are 20 minutes (15 minutes presentation and 5 minutes for questions). Please use EasyChair for your submission.
+    The submission should not exceed 500 words and should not include references. Please indicate by the topic if you are submitting a poster or talk.
+
+    To submit your abstract, please follow below link to the submission site:
+
+    [**Abstract Submission Site**](https://easychair.org/conferences/?conf=wamta23)
+
+    Note that at least one of the authors of each abstract accepted for
+    presentation in WAMTA 23 must be registered.
 - title: Submission of workshop proceedings
   body: |-
     Authors need to submit their work through EasyChair. Submissions must be in Springer [LNCS](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines) format and between ten and twelve pages, including text, the references section, appendices, and figures.

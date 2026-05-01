@@ -1,15 +1,20 @@
 ---
-description: "Supercomputers are breaking the exascale barrier, and tremendous\namounts
-  of work have been invested into identifying and overcoming the\nchallenges of the
-  exascale era. These challenges include\nload-balancing, fast data transfers, and
-  efficient resource\nutilization. Task-based models and runtime systems have shown
-  that it\nis possible to address these challenges by providing additional\nmechanisms
-  such as oversubscription, task/data locality, shared\nmemory, and data dependence-driven
-  execution. \n\nThis workshop explores the advantages of task-based programming on\nactual
-  and future HPC systems. It will gather developers, users, and\nproponents of these
-  models and systems to share experiences, discuss\nhow they meet the challenges posed
-  by Exascale system architectures,\nand explore opportunities for increased performance,
-  robustness, and\nfull-system utilization."
+description: |-
+  Supercomputers are breaking the exascale barrier, and tremendous
+  amounts of work have been invested into identifying and overcoming the
+  challenges of the exascale era. These challenges include
+  load-balancing, fast data transfers, and efficient resource
+  utilization. Task-based models and runtime systems have shown that it
+  is possible to address these challenges by providing additional
+  mechanisms such as oversubscription, task/data locality, shared
+  memory, and data dependence-driven execution.
+
+  This workshop explores the advantages of task-based programming on
+  actual and future HPC systems. It will gather developers, users, and
+  proponents of these models and systems to share experiences, discuss
+  how they meet the challenges posed by Exascale system architectures,
+  and explore opportunities for increased performance, robustness, and
+  full-system utilization.
 special_issue: |-
   **Special Issue in SN Computer Science**
 

@@ -1,0 +1,50 @@
+intro: TBA
+# Optional fields:
+# social_events:
+#   - { label: <event name>, url: events }
+# links:
+#   - { label: Schedule (pdf),         url: "/assets/years/2027/timetable.pdf" }
+#   - { label: Book of Abstracts (pdf), url: "/assets/years/2027/book-of-abstracts.pdf" }
+# show_contact: true
+#
+# `schedule:` has two shapes; pick one when ready.
+#
+# 1) PDF embed (drop the file under assets/years/2027/):
+# schedule:
+#   kind: pdf
+#   url: "/assets/years/2027/timetable.pdf"
+#   file_name: timetable.pdf
+#
+# 2) Structured timetable (renders as an inline HTML grid). Each cell is a
+#    mapping with `kind:` set to one of meta / keynote / talk / event / schedule.
+#    Use `all:` on a row to repeat the same cell across every day.
+#
+# schedule:
+#   kind: timetable
+#   days:
+#     - { key: mon, label: "Mon Mmm DD (Day 1)" }
+#     - { key: tue, label: "Tue Mmm DD (Day 2)" }
+#     - { key: wed, label: "Wed Mmm DD (Day 3)" }
+#   rows:
+#     - time: "08:00 AM"
+#       all: { kind: meta, text: "Registration / Coffee" }
+#     - time: "09:00 AM"
+#       mon: { kind: keynote, number: 1, chair: "TBA", speaker: "TBA", title: "TBA" }
+#     - time: "10:00 AM"
+#       all: { kind: meta, text: "Coffee" }
+#     - mon: { kind: meta, text: "Session 1, Chair: TBA" }
+#       tue: { kind: meta, text: "Session 2, Chair: TBA" }
+#       wed: { kind: meta, text: "Session 3, Chair: TBA" }
+#     - time: "10:30 AM"
+#       mon: { kind: talk, speaker: "TBA", title: "TBA" }
+#       tue: { kind: talk, speaker: "TBA", title: "TBA" }
+#       wed: { kind: talk, speaker: "TBA", title: "TBA" }
+#     - time: "12:00 PM"
+#       all: { kind: meta, text: "Lunch" }
+#     - time: "Evening"
+#       mon: { kind: event, label: "Reception", note: "TBA" }
+#       tue:
+#         kind: schedule
+#         items:
+#           - "Bus to venue"
+#           - "Banquet"
