@@ -3,16 +3,108 @@ intro: The venue for all talks is the University of Tennessee, Knoxville Student
   Building, **Room 169**, 1502 Cumberland Avenue, Knoxville, TN 37996.
 social_events: []
 schedule:
-  kind: pdf
-  url: "/assets/years/2024/timetable.pdf"
-  file_name: timetable.pdf
+  kind: timetable
+  days:
+    - { key: wed, label: "Wed Feb 14 (Day 1)" }
+    - { key: thu, label: "Thu Feb 15 (Day 2)" }
+    - { key: fri, label: "Fri Feb 16 (Day 3)" }
+  rows:
+    - time: "8:00 AM"
+      all: { kind: meta, text: "Registration / Coffee and Pastries" }
+
+    - time: "8:45 AM"
+      wed: { kind: event, label: "Welcoming Remarks" }
+      fri: { kind: event, label: "Welcome remarks" }
+
+    - time: "8:55 AM"
+      thu: { kind: meta, text: "WAMTA'25 Preview" }
+
+    - time: "9:00 AM"
+      wed: { kind: keynote, number: 1, chair: "P. Valero", speaker: "Jeffrey Vetter", title: "Deep Codesign in the Post-Exascale Computing Era" }
+      thu: { kind: keynote, number: 2, chair: "P. Diehl", speaker: "Sean Treichler", title: "Too Much Parallelism, and the Need for Compiler Support in Asynchronous Many-Task Systems" }
+      fri: { kind: keynote, number: 3, chair: "T. Herault", speaker: "Robert Harrison", title: "MADNESS: A task-based application and runtime" }
+
+    - time: "10:00 AM"
+      all: { kind: meta, text: "Coffee" }
+
+    - wed: { kind: meta, text: "Session 1, Chair: O. Mor" }
+      thu: { kind: meta, text: "Session 3, Chair: Q. Cao" }
+      fri: { kind: meta, text: "Session 6, Chair: P. Diehl" }
+
+    - time: "10:30 AM"
+      wed: { kind: talk, speaker: "Nathalie Furmento", title: "Optimizing Parallel System Efficiency: Dynamic Task Graph Adaptation with Recursive Tasks" }
+      thu: { kind: talk, speaker: "Rüdiger Nather", title: "Futures for dynamic dependencies – Parallelizing the H-LU Factorization" }
+      fri: { kind: talk, speaker: "Zane Fink", title: "Only Pay for What You Need: Registration-Based Queueing in Asynchronous Many-Task Systems" }
+
+    - time: "11:00 AM"
+      wed: { kind: talk, speaker: "Alex Aiken", title: "Speaking Pygion: Experiences Writing an Exascale Single Particle Imaging Code" }
+      thu: { kind: talk, speaker: "Alycia Lisito", title: "Enhancing sparse direct solver scalability through runtime system automatic data partition." }
+      fri: { kind: talk, speaker: "Kavitha Chandrasekar", title: "Dynamic Tuning of Core Count to Maximize Performance in Object-based Runtime systems" }
+
+    - time: "11:30 AM"
+      wed: { kind: talk, speaker: "Jonas Posner", title: "Evolving APGAS Programs: Automatic and Transparent Resource Adjustments at Runtime" }
+      thu: { kind: talk, speaker: "Qinglei Cao", title: "Evaluating PaRSEC for Advanced Matrix Computations in Climate and Weather Prediction" }
+      fri: { kind: talk, speaker: "Vicenç Beltran", title: "The Asynchronous Low-level Programming Interface (ALPI): Enabling Portable Task-Aware Libraries Across Different Runtime Systems" }
+
+    - time: "12:00 PM"
+      wed: { kind: meta, text: "Lunch" }
+      thu: { kind: event, label: "Lunch & Poster session" }
+      fri: { kind: talk, speaker: "Narasinga Rao Miniskar", title: "IRIS Reimagined: Advancements in Intelligent Runtime System for Task-Based Programming" }
+
+    - time: "12:30 PM"
+      fri: { kind: meta, text: "Lunch" }
+
+    - wed: { kind: meta, text: "Session 2, Chair: M. Faverge" }
+      thu: { kind: meta, text: "Session 4, Chair: A. Bouteiller" }
+
+    - time: "1:00 PM"
+      wed: { kind: talk, speaker: "Mohammad Alaul Haque Monil", title: "A Peek into Multi-Vendor and Multi-device Heterogeneity and Portability of MatRIS using IRIS Task based Runtime" }
+      thu: { kind: talk, speaker: "Aditya Bhosale", title: "An abstraction for distributed stencil computations using Charm++" }
+
+    - time: "1:30 PM"
+      wed: { kind: talk, speaker: "Alexander Strack", title: "Experiences Porting Distributed Applications to Asynchronous Tasks: A Multidimensional FFT Case-study" }
+      thu: { kind: talk, speaker: "Patrick Diehl", title: "HPX in the HPC Cloud: Evaluating Overheads of Cloud resources for HPX/Kokkos using an astrophysics application" }
+
+    - time: "2:00 PM"
+      wed: { kind: talk, speaker: "Raffaele Solcà", title: "DLA-Future: a task-based linear algebra library which provides a GPU-enabled distributed eigensolver." }
+      thu: { kind: talk, speaker: "Tsung-Wei Huang", title: "Taskflow: A General-purpose Task-parallel Programming System" }
+
+    - time: "2:30 PM"
+      wed: { kind: meta, text: "Coffee" }
+      thu: { kind: meta, text: "Coffee" }
+
+    - wed: { kind: meta, text: "Session 3, Chair: C. Junghans" }
+      thu: { kind: meta, text: "Session 5, Chair: T. Herault" }
+
+    - time: "3:00 PM"
+      wed: { kind: talk, speaker: "Max Morris", title: "A Suite of Codes for Benchmarking and Testing Mutex-Based Parallel Systems" }
+      thu: { kind: talk, speaker: "Nicholas Morales", title: "Distributed Asynchronous Contact Mechanics with DARMA/vt" }
+
+    - time: "3:30 PM"
+      wed: { kind: talk, speaker: "Jose M Monsalve Diaz", title: "On scheduling languages for tasking execution models" }
+      thu: { kind: talk, speaker: "Elaine Wong", title: "Rethinking Programming Paradigms in the QC-HPC Context" }
+
+    - time: "4:00 PM"
+      wed: { kind: event, label: "Discussion: AI" }
+      thu: { kind: event, label: "Discussion: Accelerators" }
+
+    - wed: { kind: meta, text: "Break" }
+      thu: { kind: meta, text: "Banquet" }
+
+    - time: "6:00 PM"
+      wed: { kind: event, label: "Pizza & Beer at Alliance Brewing Co", note: "1130 Sevier Ave, Knoxville, TN 37920" }
+      thu:
+        kind: schedule
+        items:
+          - "Banquet at Calhoun's On The River, 400 Neyland Dr, Knoxville, TN 37902 (until 9:00 PM)"
+          - "Industrial talk: Orienteering RISC-V for HPC — Chris Taylor (Tactical Computing Lab)"
 links:
-- label: Schedule
-  url: "/assets/years/2024/timetable.pdf"
-- label: Book of Abstracts
-  url: "/assets/years/2024/wamta24_abstracts.pdf"
-- label: Collection of slides and posters
-  url: https://zenodo.org/communities/wamta24
-- label: Group picture
-  url: "/assets/years/2024/WAMTA-group-full.jpg"
+  - label: Schedule
+    url: "/assets/years/2024/timetable.pdf"
+  - label: Book of Abstracts
+    url: "/assets/years/2024/wamta24_abstracts.pdf"
+  - label: Collection of slides and posters
+    url: https://zenodo.org/communities/wamta24
+  - label: Group picture
+    url: "/assets/years/2024/WAMTA-group-full.jpg"
 show_contact: true

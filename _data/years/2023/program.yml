@@ -1,18 +1,221 @@
----
 intro: |-
-  * [Schedule ](/assets/years/2023/schedule.pdf)
-
-  * [ Book of Abstracts ](/assets/years/2023/book-of-abstracts.pdf)
-
-  * [ Short course: Modern STL ](/2023/shortcourse)
-
-  * [Recorded talks](https://www.youtube.com/playlist?list=PL7vEgTL3FalZ7xBUvYrlgacIhc3CqbYAM)
-
-  * [Collection of slides and posters](https://zenodo.org/communities/wamta23/?page=1&size=20)
+  The venue for all talks is the [Louisiana Digital Media Center](https://www.cct.lsu.edu/about/lsu-digital-media-center) at 340 E Parker Blvd, Baton Rouge, LA 70808.
 social_events: []
 schedule:
-  kind: pdf
-  url: "/assets/years/2023/schedule.pdf"
-  file_name: schedule.pdf
-links: []
+  kind: timetable
+  days:
+    - { key: sun, label: "Sun Feb 12 (Short course)" }
+    - { key: mon, label: "Mon Feb 13 (Short course)" }
+    - { key: tue, label: "Tue Feb 14 (Day 1)" }
+    - { key: wed, label: "Wed Feb 15 (Day 2)" }
+    - { key: thu, label: "Thu Feb 16 (Day 3)" }
+  rows:
+    - time: "08:30 AM"
+      sun: { kind: meta, text: "Registration" }
+
+    - time: "09:00 AM"
+      sun:
+        kind: event
+        label: "Short course: Part I"
+        note: "Nicolai Josuttis"
+      mon:
+        kind: event
+        label: "Short course: Part V"
+        note: "Nicolai Josuttis"
+
+    - time: "10:30 AM"
+      sun: { kind: meta, text: "Break" }
+      mon: { kind: meta, text: "Break" }
+
+    - time: "11:00 AM"
+      sun:
+        kind: event
+        label: "Short course: Part II"
+        note: "Nicolai Josuttis"
+      mon:
+        kind: event
+        label: "Short course: Part VI"
+        note: "Nicolai Josuttis"
+
+    - time: "12:30 PM"
+      sun: { kind: meta, text: "Lunch" }
+
+    - time: "01:30 PM"
+      sun:
+        kind: event
+        label: "Short course: Part III"
+        note: "Nicolai Josuttis"
+
+    - time: "03:00 PM"
+      sun: { kind: meta, text: "Coffee Break" }
+
+    - time: "03:30 PM"
+      sun:
+        kind: event
+        label: "Short course: Part IV"
+        note: "Nicolai Josuttis"
+
+    - time: "08:00 AM"
+      tue: { kind: meta, text: "Registration / Coffee" }
+      wed: { kind: meta, text: "Registration / Coffee and Pastries" }
+      thu: { kind: meta, text: "Registration / Coffee and Pastries" }
+
+    - time: "08:45 AM"
+      tue: { kind: event, label: "Welcoming Remarks" }
+      wed: { kind: event, label: "Welcome remarks" }
+      thu: { kind: event, label: "Welcome remarks" }
+
+    - time: "09:00 AM"
+      tue:
+        kind: keynote
+        number: 1
+        chair: "P. Diehl"
+        speaker: "Michelle Strout"
+        title: "Application Examples of Leveraging Task Parallelism with Chapel"
+      wed:
+        kind: keynote
+        number: 2
+        chair: "H. Kaiser"
+        speaker: "Damian Rouson"
+        title: "PGAS: A View from Berkeley"
+      thu:
+        kind: keynote
+        number: 3
+        chair: "S. R. Brandt"
+        speaker: "George Bosilca"
+        title: "Heterogeneous distributed runtimes for fine-granularity tasks: A possible revolution in parallel programming"
+
+    - time: "10:00 AM"
+      tue: { kind: meta, text: "Coffee" }
+      wed: { kind: meta, text: "Coffee" }
+      thu: { kind: meta, text: "Coffee" }
+
+    - tue: { kind: meta, text: "Session 1, Chair: H. Kaiser" }
+      wed: { kind: meta, text: "Session 3, Chair: P. Diehl" }
+      thu: { kind: meta, text: "Session 5, Chair: S. R. Brandt" }
+
+    - time: "10:30 AM"
+      tue:
+        kind: talk
+        speaker: "Brad Richardson"
+        title: "Framework for Extensible, Asynchronous Task Scheduling (FEATS) in Fortran"
+      wed:
+        kind: talk
+        speaker: "Laxmikant (Sanjay) Kale"
+        title: "Efficiency and raw speed vs generality and versatility in parallel programming models"
+      thu:
+        kind: talk
+        speaker: "Mikael Simberg"
+        title: "HPX and Kokkos: unifying asynchrony and portability on the path towards standardization"
+
+    - time: "11:00 AM"
+      tue:
+        kind: talk
+        speaker: "Peter Thoman"
+        title: "Command Horizons: Coalescing Data Dependencies while Maintaining Asynchronicity"
+      wed:
+        kind: talk
+        speaker: "Ben Bergen"
+        title: "Recent FleCSI Developments"
+      thu:
+        kind: talk
+        speaker: "Abhishek Bagusetty"
+        title: "Portable Uintah framework for heterogeneous, asynchronous many-task runtime systems for Exascale Architectures"
+
+    - time: "11:30 AM"
+      tue:
+        kind: talk
+        speaker: "Hugh Delaney"
+        title: "Performance Portability using Standard C++ with SYCL"
+      wed:
+        kind: talk
+        speaker: "Sumathi Lakshmiranganatha"
+        title: "FleCSI: Scalability Studies and Challenges"
+      thu:
+        kind: talk
+        speaker: "Nitish Shingde"
+        title: "Matrix Multiplication using Hedgehog's data flow graphs on multi-node GPU architectures"
+
+    - time: "12:00 PM"
+      tue:
+        kind: talk
+        speaker: "Michael Wong"
+        title: "Khronos SYCL heterogeneous programming for future codesign with RISC-V, HPC, and AI"
+      wed:
+        kind: talk
+        speaker: "Thomas Sterling"
+        title: "Active Memory Architecture for Asynchronous Graph Processing"
+      thu:
+        kind: talk
+        speaker: "Dominic Marcello"
+        title: "Octo-Tiger: An HPX Based Code for Modelling Three-Dimensional Self-Gravitating Fluids"
+
+    - time: "12:30 PM"
+      all: { kind: meta, text: "Lunch" }
+
+    - tue: { kind: meta, text: "Session 2, Chair: G. Baumgartner" }
+      wed: { kind: meta, text: "Session 4, Chair: P. Grubel" }
+
+    - time: "02:00 PM"
+      tue:
+        kind: talk
+        speaker: "Jan Ciesko"
+        title: "Qthreads: A Lightweight Threading Library for the Many-core Era"
+      wed:
+        kind: talk
+        speaker: "Peter Franz"
+        title: "Scheduling Many-task Applications on Multi-clouds and Hybrid Clouds"
+
+    - time: "02:30 PM"
+      tue:
+        kind: talk
+        speaker: "Christian Trott"
+        title: "Kokkos' Role for Performance Portability in AMT Systems"
+      wed:
+        kind: talk
+        speaker: "Alex Aiken"
+        title: "Lessons Learned From Writing Task-Based Libraries"
+
+    - time: "03:00 PM"
+      tue:
+        kind: talk
+        speaker: "Hartmut Kaiser"
+        title: "HPX - A C++ Library for Parallelism and Concurrency"
+      wed:
+        kind: talk
+        speaker: "Pedro Valero-Lara"
+        title: "MatRIS: A fully agnostic solution for BLAS and LaPACK codes using the IRIS runtime"
+
+    - time: "03:30 PM"
+      tue: { kind: event, label: "Discussion: AI", chair: "C. Junghans" }
+      wed: { kind: event, label: "Discussion: GPU", chair: "D. Rouson" }
+
+    - time: "04:00 PM"
+      tue: { kind: meta, text: "Coffee" }
+      wed: { kind: meta, text: "Coffee" }
+
+    - time: "05:30 PM"
+      tue: { kind: event, label: "Poster session", note: "5:30 PM–6:30 PM" }
+
+    - time: "Evening"
+      mon:
+        kind: event
+        label: "Reception"
+        note: "7:00 PM–9:00 PM, The Cook Room, Cook Hotel & Conference Center"
+      wed:
+        kind: schedule
+        items:
+          - "Industrial talk: Chris Taylor (Tactical Computing Lab)"
+          - "Banquet: The Club at LSU Union Square, 7:00 PM–10:00 PM"
+links:
+  - label: Schedule (PDF)
+    url: "/assets/years/2023/schedule.pdf"
+  - label: Book of Abstracts (PDF)
+    url: "/assets/years/2023/book-of-abstracts.pdf"
+  - label: Short course - Modern STL
+    url: /2023/shortcourse
+  - label: Recorded talks
+    url: https://www.youtube.com/playlist?list=PL7vEgTL3FalZ7xBUvYrlgacIhc3CqbYAM
+  - label: Collection of slides and posters
+    url: https://zenodo.org/communities/wamta23/?page=1&size=20
 show_contact: true

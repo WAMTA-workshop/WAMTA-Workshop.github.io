@@ -5,14 +5,96 @@ intro: |-
   **Note: The in-person location varies daily. Please check the "Travel" section for details.**
 social_events: []
 schedule:
-  kind: pdf
-  url: "/assets/years/2025/timetable.pdf"
-  file_name: timetable.pdf
+  kind: timetable
+  days:
+    - { key: wed, label: "Wed Feb 19 (Day 1)" }
+    - { key: thu, label: "Thu Feb 20 (Day 2)" }
+    - { key: fri, label: "Fri Feb 21 (Day 3)" }
+  rows:
+    - time: "08:00 AM"
+      all: { kind: meta, text: "Registration / Coffee and Pastries" }
+
+    - time: "08:45 AM"
+      wed: { kind: event, label: "Welcoming Remarks" }
+
+    - time: "08:55 AM"
+      thu: { kind: meta, text: "WAMTA'26 Preview" }
+
+    - time: "09:00 AM"
+      wed: { kind: keynote, number: 1, chair: "Q. Cao", speaker: "Alan Edelman", title: "Improving the HPC experience: did Julia get it right or will AI hide the problem (or both)?" }
+      thu: { kind: keynote, number: 2, chair: "P. Diehl", speaker: "Christian Trott", title: "Task-Graphs: Why aren't we all using them?" }
+      fri: { kind: keynote, number: 3, chair: "Q. Cao", speaker: "Hatem Ltaief", title: "Chaos to Cosmos: Orchestrating Complex Scientific Applications with Dynamic Runtime Systems" }
+
+    - time: "10:00 AM"
+      all: { kind: meta, text: "Coffee" }
+
+    - wed: { kind: meta, text: "Session 1, Chair: C. Junghans" }
+      thu: { kind: meta, text: "Session 3, Chair: P. Diehl" }
+      fri: { kind: meta, text: "Session 6, Chair: Q. Cao" }
+
+    - time: "10:30 AM"
+      wed: { kind: talk, speaker: "Jiakun Yan", title: "Contemplating a Lightweight Communication Interface for Asynchronous Many-Task Systems" }
+      thu: { kind: talk, speaker: "Nafees Iqbal", title: "Type-level invariants for SPMD programming with Rust" }
+      fri: { kind: talk, speaker: "Joseph Schuchart", title: "Scalable Block-Sparse Matrix Multiplication Using Template Task Graphs" }
+
+    - time: "11:00 AM"
+      wed: { kind: talk, speaker: "Aurelien Bouteiller", title: "Comparing and Contrasting User and Runtime Directed Data Placement Strategies for Owner-Compute, Multi-Accelerator Distributed Task Based Scheduling" }
+      thu: { kind: talk, speaker: "Patrick Diehl", title: "Evaluating AI-generated code for C++, Fortran, Go, Java, Julia, Matlab, Python, R, and Rust" }
+      fri: { kind: talk, speaker: "Qiao Zhang", title: "Leveraging Hardware-Aware Computation in Mixed-Precision Matrix Multiply: A Tile-Centric Approach" }
+
+    - time: "11:30 AM"
+      wed: { kind: talk, speaker: "Shreyas Atre", title: "ChplX: an Asynchronous Many Task Runtime Foundation for Chapel" }
+      thu: { kind: talk, speaker: "Jonas Posner", title: "Dynamic Resource Management: Comparison of Asynchronous Many-Task (AMT) and Dynamic Processes with PSets (DPP)" }
+      fri: { kind: meta, text: "Panel discussion: SWOT" }
+
+    - time: "12:00 PM"
+      wed: { kind: meta, text: "Lunch" }
+      thu: { kind: meta, text: "Lunch & Poster session" }
+      fri: { kind: meta, text: "Lunch" }
+
+    - wed: { kind: meta, text: "Session 2, Chair: V. Carrica" }
+      thu: { kind: meta, text: "Session 4, Chair: J. Yan" }
+
+    - time: "01:00 PM"
+      wed: { kind: talk, speaker: "Vicenc Beltran Querol", title: "Supporting OpenMP Free Agents by Leveraging the nOS-V Threading Library" }
+      thu: { kind: talk, speaker: "Amadeu Moya", title: "Unifying the Architecture and Implementation of Task-Aware Libraries" }
+
+    - time: "01:30 PM"
+      wed: { kind: talk, speaker: "Rüdiger Nather", title: "Futures in Task Graphs & Extending Taskflow With Dynamic Data Dependencies" }
+      thu: { kind: talk, speaker: "Rabab Alomairy", title: "Data Sparsity in Global and Compact Support Radial Basis Functions for 3D Unstructured Mesh Deformation" }
+
+    - time: "02:00 PM"
+      wed: { kind: talk, speaker: "Karame Mohammadiporshokooh", title: "Adaptively Optimizing the Performance of HPX's Parallel Algorithms" }
+      thu: { kind: talk, speaker: "Cheng-Hsiang Chiu", title: "A Task-parallel Pipeline Programming Framework with Token Dependency" }
+
+    - time: "02:30 PM"
+      all: { kind: meta, text: "Coffee" }
+
+    - wed: { kind: meta, text: "Session 3, Chair: J. Schuchart" }
+      thu: { kind: meta, text: "Session 5, Chair: A. Bouteiller" }
+
+    - time: "03:00 PM"
+      wed: { kind: talk, speaker: "Claudia Fohry", title: "Fail-stop Failure Protection for Coordinated Work Stealing of Tasks that Communicate through Futures" }
+      thu: { kind: talk, speaker: "Alexander Strack", title: "GPRat: Gaussian Process Regression with Asynchronous Tasks" }
+
+    - time: "03:30 PM"
+      wed: { kind: talk, speaker: "Anthony Cabrera", title: "Q-IRIS: The Evolution of the IRIS Task-Based Runtime to Enable Classical-Quantum Workflows" }
+      thu: { kind: talk, speaker: "Maxwell Onyango", title: "Julia-Unified Recursive Implementation of TRMM and TRSM for GPU Acceleration" }
+
+    - time: "04:00 PM"
+      wed: { kind: meta, text: "Discussion: Integration with other standards" }
+      thu: { kind: meta, text: "Discussion: AI" }
+
+    - time: "05:30 PM"
+      wed: { kind: event, label: "Banquet on Campus", note: "until 8:00 PM" }
+
+    - time: "06:45 PM"
+      thu: { kind: event, label: "Pizza dinner at Vito's Sicilian Pizzeria & Ristorante", note: "until 8:30 PM" }
 links:
-- label: Schedule
-  url: "/assets/years/2025/timetable.pdf"
-- label: Book of Abstract
-  url: "/assets/years/2025/main.pdf"
-- label: Collection of artifacts
-  url: https://zenodo.org/communities/wamta25/
+  - label: Schedule
+    url: "/assets/years/2025/timetable.pdf"
+  - label: Book of Abstract
+    url: "/assets/years/2025/main.pdf"
+  - label: Collection of artifacts
+    url: https://zenodo.org/communities/wamta25/
 show_contact: true
