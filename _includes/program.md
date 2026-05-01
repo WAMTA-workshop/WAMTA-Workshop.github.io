@@ -17,7 +17,7 @@
 
 {% if program.schedule %}
 <div class="text-info">Scientific Program and Timetable:</div>
-{% if program.schedule.kind == "table" %}
+{% if program.schedule.kind == "timetable" %}
   {% include schedule-table.html schedule=program.schedule %}
 {% elsif program.schedule.kind == "pdf" %}
   <div class="row"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">

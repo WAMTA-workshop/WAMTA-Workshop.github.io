@@ -1,0 +1,16 @@
+{%- assign cell = include.cell -%}
+{%- if cell == nil or cell == empty -%}
+<td></td>
+{%- elsif cell.kind == "meta" -%}
+<td><em>{{ cell.text }}</em></td>
+{%- elsif cell.kind == "keynote" -%}
+<td><em>Keynote{% if cell.number %} {{ cell.number }}{% endif %}{% if cell.chair %}, Chair: {{ cell.chair }}{% endif %}</em><br><b>{{ cell.speaker }}:</b> {{ cell.title }}</td>
+{%- elsif cell.kind == "talk" -%}
+<td><b>{{ cell.speaker }}:</b> {{ cell.title }}</td>
+{%- elsif cell.kind == "event" -%}
+<td>{{ cell.label }}{% if cell.chair %}, <em>Chair: {{ cell.chair }}</em>{% endif %}{% if cell.note %} ({{ cell.note }}){% endif %}</td>
+{%- elsif cell.kind == "schedule" -%}
+<td>{% for item in cell.items %}{{ item }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</td>
+{%- else -%}
+<td>{{ cell }}</td>
+{%- endif -%}

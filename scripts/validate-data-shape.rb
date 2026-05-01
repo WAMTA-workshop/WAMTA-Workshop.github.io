@@ -58,6 +58,22 @@ SPONSOR_KEYS = %w[name logo_path].freeze
 KEYNOTE_TALK_KEYS = %w[label title speaker affiliation homepage abstract materials].freeze
 KEYNOTE_TALK_REQUIRED_KEYS = %w[label title speaker abstract].freeze
 KEYNOTE_MATERIAL_KEYS = %w[label url].freeze
+SCHEDULE_DAY_KEYS = %w[key label].freeze
+SCHEDULE_ROW_RESERVED_KEYS = %w[time all].freeze
+SCHEDULE_CELL_ALLOWED = {
+  'meta' => %w[kind text],
+  'keynote' => %w[kind number chair speaker title],
+  'talk' => %w[kind speaker title],
+  'event' => %w[kind label chair note],
+  'schedule' => %w[kind items]
+}.freeze
+SCHEDULE_CELL_REQUIRED = {
+  'meta' => %w[text],
+  'keynote' => %w[speaker title],
+  'talk' => %w[speaker title],
+  'event' => %w[label],
+  'schedule' => %w[items]
+}.freeze
 
 def local_asset_exists?(path)
   path.to_s.start_with?('/assets/') && File.exist?(File.join(ROOT, path.delete_prefix('/')))
@@ -198,6 +214,98 @@ def inspect_keynote_shape(data, path, errors)
   end
 end
 
+def inspect_schedule_cell(cell, path, errors)
+  return if cell.nil? || cell == ''
+
+  unless cell.is_a?(Hash)
+    errors << "#{path}: cell must be a mapping with a kind: field, or empty"
+    return
+  end
+
+  kind = cell['kind'].to_s
+  unless SCHEDULE_CELL_ALLOWED.key?(kind)
+    allowed = SCHEDULE_CELL_ALLOWED.keys.join(', ')
+    errors << "#{path}.kind: unknown cell kind #{cell['kind'].inspect} (allowed: #{allowed})"
+    return
+  end
+
+  allowed = SCHEDULE_CELL_ALLOWED[kind]
+  cell.each_key do |key|
+    next if allowed.include?(key.to_s)
+
+    errors << "#{path}.#{key}: unknown key for cell kind #{kind}"
+  end
+
+  SCHEDULE_CELL_REQUIRED[kind].each do |required_key|
+    errors << "#{path}.#{required_key}: missing required key for cell kind #{kind}" unless cell.key?(required_key)
+  end
+
+  if kind == 'schedule'
+    items = cell['items']
+    unless items.is_a?(Array) && !items.empty? && items.all? { |i| i.is_a?(String) }
+      errors << "#{path}.items: must be a non-empty array of strings"
+    end
+  end
+end
+
+def inspect_timetable_schedule(schedule, path, errors)
+  days = schedule['days']
+  unless days.is_a?(Array) && !days.empty?
+    errors << "#{path}:schedule.days: timetable schedules require a non-empty days array"
+    return
+  end
+
+  day_keys = []
+  days.each_with_index do |day, index|
+    unless day.is_a?(Hash) && day['key'].is_a?(String) && day['label'].is_a?(String)
+      errors << "#{path}:schedule.days[#{index}]: each day requires string key and label"
+      next
+    end
+
+    day.each_key do |key|
+      next if SCHEDULE_DAY_KEYS.include?(key.to_s)
+
+      errors << "#{path}:schedule.days[#{index}].#{key}: unknown day key"
+    end
+    day_keys << day['key']
+  end
+
+  rows = schedule['rows']
+  unless rows.is_a?(Array)
+    errors << "#{path}:schedule.rows: must be an array"
+    return
+  end
+
+  allowed_row_keys = SCHEDULE_ROW_RESERVED_KEYS + day_keys
+  rows.each_with_index do |row, row_index|
+    row_path = "#{path}:schedule.rows[#{row_index}]"
+    unless row.is_a?(Hash)
+      errors << "#{row_path}: must be a mapping"
+      next
+    end
+
+    row.each_key do |key|
+      next if allowed_row_keys.include?(key.to_s)
+
+      errors << "#{row_path}.#{key}: unknown row key (allowed: time, all, #{day_keys.join(', ')})"
+    end
+
+    if row.key?('all') && day_keys.any? { |k| row.key?(k) }
+      errors << "#{row_path}: cannot mix 'all' with per-day cells"
+    end
+
+    if row['all']
+      inspect_schedule_cell(row['all'], "#{row_path}.all", errors)
+    else
+      day_keys.each do |key|
+        next unless row.key?(key)
+
+        inspect_schedule_cell(row[key], "#{row_path}.#{key}", errors)
+      end
+    end
+  end
+end
+
 def inspect_committee_labels(labels, path, errors)
   unless labels.is_a?(Hash)
     errors << "#{path}:labels: must be a mapping of committee group => display title"
@@ -286,20 +394,8 @@ def inspect_page_shape(name, data, path, errors)
     end
   when 'program'
     schedule = data['schedule']
-    if schedule && schedule['kind'] == 'table'
-      headings = schedule['headings']
-      rows = schedule['rows']
-      if !headings.is_a?(Array) || headings.empty?
-        errors << "#{path}:schedule.headings: table schedules require headings"
-      elsif !rows.is_a?(Array)
-        errors << "#{path}:schedule.rows: table schedules require rows"
-      else
-        rows.each_with_index do |row, row_index|
-          next if row.is_a?(Array) && row.length == headings.length
-
-          errors << "#{path}:schedule.rows[#{row_index}]: row width must match headings"
-        end
-      end
+    if schedule && schedule['kind'] == 'timetable'
+      inspect_timetable_schedule(schedule, path, errors)
     elsif schedule && schedule['kind'] == 'pdf'
       %w[url file_name].each do |required_key|
         errors << "#{path}:schedule.#{required_key}: PDF schedules require #{required_key}" unless schedule[required_key].is_a?(String)
@@ -309,7 +405,7 @@ def inspect_page_shape(name, data, path, errors)
         errors << "#{path}:schedule.url: asset does not exist"
       end
     elsif schedule
-      errors << "#{path}:schedule.kind: must be table or pdf"
+      errors << "#{path}:schedule.kind: must be timetable or pdf"
     end
   when 'venue'
     data.fetch('sections', []).each_with_index do |section, index|

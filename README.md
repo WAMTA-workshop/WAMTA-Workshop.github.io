@@ -49,7 +49,7 @@ Each `_data/years/<year>/` directory is split by concern:
 - `committees.yml`: chairs, steering committee, technical program committee,
   webmaster, and organizing committee data when present. An optional top-level
   `labels:` mapping overrides the displayed card title per group (for example
-  `program_chair: "Local organizers"` or `steering_committee: "Scientific
+  `program_chair: "Local Organizers"` or `steering_committee: "Scientific
   Committee"`); without `labels`, the include falls back to canonical names.
 - Page data files such as `home.yml`, `cfp.yml`, `submission.yml`,
   `program.yml`, `venue.yml`, `registration.yml`, `keynote.yml`,

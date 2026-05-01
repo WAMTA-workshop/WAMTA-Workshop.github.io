@@ -1,6 +1,6 @@
 ---
 labels:
-  program_chair: Local organizers
+  program_chair: Local Organizers
   steering_committee: Scientific Committee
   technical_program_chair: Technical Program Chair
   webmaster: Webmaster
@@ -101,5 +101,5 @@ technical_program_chair:
   homepage: https://www.mpcdf.mpg.de
 webmaster:
 - name: Parsa Amini
-  org: Halpern-Wight Inc. (USA)
+  org: AMD Inc. (USA)
   homepage: https://www.parsaamini.net/

@@ -1,22 +1,24 @@
+{%- assign schedule = include.schedule -%}
 <table class="table table-bordered schedule-table">
   <thead>
     <tr>
-      {% for heading in include.schedule.headings %}
-        <th>{{ heading }}</th>
-      {% endfor %}
+      <th>Time</th>
+      {%- for day in schedule.days %}<th>{{ day.label }}</th>{% endfor %}
     </tr>
   </thead>
   <tbody>
-    {% for row in include.schedule.rows %}
-      <tr>
-        {% for cell in row %}
-          {% if forloop.first %}
-            <td class="time-col">{{ cell }}</td>
-          {% else %}
-            <td>{{ cell | markdownify }}</td>
-          {% endif %}
-        {% endfor %}
-      </tr>
-    {% endfor %}
+    {%- for row in schedule.rows %}
+    <tr>
+      <td class="time-col">{{ row.time }}</td>
+      {%- for day in schedule.days -%}
+        {%- if row.all -%}
+          {%- assign current_cell = row.all -%}
+        {%- else -%}
+          {%- assign current_cell = row[day.key] -%}
+        {%- endif -%}
+        {% include schedule-cell.html cell=current_cell %}
+      {%- endfor %}
+    </tr>
+    {%- endfor %}
   </tbody>
 </table>
