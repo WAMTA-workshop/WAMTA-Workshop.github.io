@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Common WAMTA YAML data definitions",
+  "description": "Reusable $defs that other WAMTA data schemas reference via $ref. Holds shared string patterns and the no-layout-HTML guard mirrored from scripts/validate-data-shape.rb.",
+  "$defs": {
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1
+    },
+    "markdownText": {
+      "description": "Multi-line markdown-formatted body text. Must not contain layout HTML (use Liquid includes for layout instead).",
+      "allOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "$ref": "#/$defs/noLayoutHtml"
+        }
+      ]
+    },
+    "url": {
+      "description": "An absolute URL (http:// or https://).",
+      "type": "string",
+      "pattern": "^https?://"
+    },
+    "urlOrPath": {
+      "description": "Either an absolute URL, a site-relative asset path (/assets/...), or another site-relative page link (e.g. /2026/program or events).",
+      "type": "string",
+      "minLength": 1
+    },
+    "assetPath": {
+      "description": "Site-relative path under /assets/. Existence on disk is checked by scripts/validate-data-shape.rb, not by this schema.",
+      "type": "string",
+      "pattern": "^/assets/"
+    },
+    "yearAssetPath": {
+      "description": "Site-relative path under /assets/years/<year>/. Required for per-year images and PDFs.",
+      "type": "string",
+      "pattern": "^/assets/years/\\d{4}/"
+    },
+    "isoDate": {
+      "description": "ISO YYYY-MM-DD date or the literal string TBA. Mirrors validate-data-shape.rb's date_like? check.",
+      "type": "string",
+      "anyOf": [
+        { "format": "date" },
+        { "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        { "const": "TBA" }
+      ]
+    },
+    "noLayoutHtml": {
+      "description": "Forbids layout/script HTML inside string fields. Mirrors FORBIDDEN_HTML in scripts/validate-data-shape.rb. Pattern is case-insensitive via character classes (ECMA-262 regex has no inline (?i) flag).",
+      "type": "string",
+      "not": {
+        "pattern": "<([Dd][Ii][Vv]|[Tt][Aa][Bb][Ll][Ee]|[Tt][Rr]|[Tt][Dd]|[Tt][Hh]|[Ss][Tt][Yy][Ll][Ee]|[Ss][Cc][Rr][Ii][Pp][Tt]|[Ii][Ff][Rr][Aa][Mm][Ee]|[Cc][Ee][Nn][Tt][Ee][Rr]|[Ii])\\b|<!--"
+      }
+    },
+    "labelValue": {
+      "description": "A {label, value} pair commonly used for date-like rows where the value can be free-form text (e.g. 'TBA', 'May 30th', or a real date).",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "value"
+      ],
+      "properties": {
+        "label": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    },
+    "linkRecord": {
+      "description": "A clickable link with a display label.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "url"
+      ],
+      "properties": {
+        "label": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "url": {
+          "$ref": "#/$defs/urlOrPath"
+        }
+      }
+    },
+    "section": {
+      "description": "A {title?, body, map?} content block used by venue, submission, and similar long-form pages.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "body"
+      ],
+      "properties": {
+        "title": {
+          "description": "Optional section heading. Empty string and null both render without a heading.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "body": {
+          "description": "Markdown-formatted section body. Empty string is allowed (e.g. for spacer sections).",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "map": {
+          "$ref": "#/$defs/mapEmbed"
+        }
+      }
+    },
+    "mapEmbed": {
+      "description": "Google Maps (or compatible) embed iframe parameters.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "src"
+      ],
+      "properties": {
+        "src": {
+          "$ref": "#/$defs/url"
+        },
+        "width": {
+          "type": [
+            "string",
+            "integer"
+          ]
+        },
+        "height": {
+          "type": [
+            "string",
+            "integer"
+          ]
+        }
+      }
+    }
+  }
+}

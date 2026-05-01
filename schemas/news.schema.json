@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WAMTA news list (news.yml)",
+  "description": "Drives the News sidebar card rendered by _includes/card-news.html. Each entry is {date?, text}; entries without a date render as undated bullets.",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/newsEntry"
+  },
+  "$defs": {
+    "newsEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "text"
+      ],
+      "properties": {
+        "date": {
+          "description": "Optional ISO YYYY-MM-DD date or the literal string TBA. Empty / null is allowed for undated news.",
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "_common.schema.json#/$defs/isoDate"
+            }
+          ]
+        },
+        "text": {
+          "description": "News-entry text. Markdown is allowed.",
+          "$ref": "_common.schema.json#/$defs/nonEmptyString"
+        }
+      }
+    }
+  }
+}

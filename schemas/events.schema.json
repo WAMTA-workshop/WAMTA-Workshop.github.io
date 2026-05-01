@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WAMTA social events page data (events.yml)",
+  "description": "Drives the per-year /events page rendered by _includes/events.md. Lists scheduled receptions, dinners, and excursions with imagery. An entirely-commented template (parses as null) is also accepted.",
+  "type": ["object", "null"],
+  "additionalProperties": false,
+  "required": [
+    "items"
+  ],
+  "properties": {
+    "nav_hidden": {
+      "description": "When true, the page stays reachable but is omitted from the top navigation.",
+      "type": "boolean"
+    },
+    "items": {
+      "description": "Ordered list of social events with descriptive title, image, and alt text.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/event"
+      }
+    }
+  },
+  "$defs": {
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "alt",
+        "image_path"
+      ],
+      "properties": {
+        "title": {
+          "description": "Event title / one-line description (where, when, what).",
+          "$ref": "_common.schema.json#/$defs/nonEmptyString"
+        },
+        "alt": {
+          "description": "Image alt text for accessibility.",
+          "$ref": "_common.schema.json#/$defs/nonEmptyString"
+        },
+        "image_path": {
+          "description": "Site-relative path to the event image, expected under /assets/years/<year>/events/.",
+          "$ref": "_common.schema.json#/$defs/yearAssetPath"
+        }
+      }
+    }
+  }
+}

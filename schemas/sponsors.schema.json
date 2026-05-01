@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WAMTA sponsors list (sponsors.yml)",
+  "description": "Drives the Sponsors sidebar card rendered by _includes/sponsors.html. Each entry is {name, logo_path}.",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/sponsor"
+  },
+  "$defs": {
+    "sponsor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "logo_path"
+      ],
+      "properties": {
+        "name": {
+          "description": "Sponsor display name / alt text.",
+          "$ref": "_common.schema.json#/$defs/nonEmptyString"
+        },
+        "logo_path": {
+          "description": "Site-relative path to the sponsor logo, expected under /assets/years/<year>/images/sponsors/.",
+          "$ref": "_common.schema.json#/$defs/yearAssetPath"
+        }
+      }
+    }
+  }
+}

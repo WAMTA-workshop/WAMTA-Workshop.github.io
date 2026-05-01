@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WAMTA registration page data (registration.yml)",
+  "description": "Drives the per-year /registration page rendered by _includes/registration.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "body"
+  ],
+  "properties": {
+    "nav_hidden": {
+      "description": "When true, the page stays reachable but is omitted from the top navigation.",
+      "type": "boolean"
+    },
+    "title": {
+      "description": "Page heading text (e.g. 'REGISTRATION' or 'REGISTRATION & ACCOMODATION').",
+      "$ref": "_common.schema.json#/$defs/nonEmptyString"
+    },
+    "body": {
+      "description": "Main registration body. Markdown allowed (links, lists, emphasis).",
+      "$ref": "_common.schema.json#/$defs/markdownText"
+    },
+    "visa": {
+      "description": "Optional VISA-information section, rendered under a 'VISA INFO:' heading. Markdown allowed.",
+      "$ref": "_common.schema.json#/$defs/markdownText"
+    }
+  }
+}

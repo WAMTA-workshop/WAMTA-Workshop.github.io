@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WAMTA home page data (home.yml)",
+  "description": "Drives the per-year landing page rendered by _includes/index.md. Required keys must always be present; optional keys toggle sidebar cards or surface previous-year links.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "lead",
+    "overview",
+    "objectives",
+    "topics"
+  ],
+  "properties": {
+    "title": {
+      "description": "Page heading text (e.g. 'WELCOME TO WAMTA 2026!').",
+      "$ref": "_common.schema.json#/$defs/nonEmptyString"
+    },
+    "lead": {
+      "description": "Short opening paragraph rendered with the .lead class. Markdown allowed.",
+      "$ref": "_common.schema.json#/$defs/markdownText"
+    },
+    "overview": {
+      "description": "Long-form workshop overview paragraph (motivation, context). Markdown allowed.",
+      "$ref": "_common.schema.json#/$defs/markdownText"
+    },
+    "objectives": {
+      "description": "Workshop objectives paragraph. Markdown allowed.",
+      "$ref": "_common.schema.json#/$defs/markdownText"
+    },
+    "topics": {
+      "description": "Bulleted list of topics of interest, rendered as a tight markdown list.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "_common.schema.json#/$defs/nonEmptyString"
+      }
+    },
+    "artifacts": {
+      "description": "Optional one-line markdown blurb pointing to the year's artifact collection (Zenodo etc.). Empty string disables the section.",
+      "type": "string"
+    },
+    "previous_events": {
+      "description": "Optional list of past WAMTA workshops shown under 'Previous events:'. An empty array suppresses the section header.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "url"
+        ],
+        "properties": {
+          "label": {
+            "description": "Display name (e.g. 'WAMTA 2025').",
+            "$ref": "_common.schema.json#/$defs/nonEmptyString"
+          },
+          "url": {
+            "description": "Link to the past event's site.",
+            "$ref": "_common.schema.json#/$defs/url"
+          },
+          "host": {
+            "description": "Optional host institution(s), markdown allowed (e.g. '[ICL](https://icl.utk.edu/)').",
+            "type": "string"
+          },
+          "artifacts_url": {
+            "description": "Optional link to that year's artifact collection.",
+            "$ref": "_common.schema.json#/$defs/url"
+          }
+        }
+      }
+    },
+    "show_contact": {
+      "description": "When true, renders the contact-us include below the home content.",
+      "type": "boolean"
+    },
+    "show_important_dates": {
+      "description": "When true, renders the Important Dates sidebar card on the home page.",
+      "type": "boolean"
+    },
+    "show_news": {
+      "description": "When true, renders the News sidebar card on the home page.",
+      "type": "boolean"
+    },
+    "show_sponsors": {
+      "description": "When true, renders the Sponsors sidebar card on the home page.",
+      "type": "boolean"
+    }
+  }
+}

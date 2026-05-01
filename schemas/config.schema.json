@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WAMTA per-year site config (config.yml)",
+  "description": "Per-year metadata, branding, slideshow, and social-media links. Surfaced site-wide via _config.yml's data lookups (e.g. site.data.years.<year>.config).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "full_title",
+    "short_title",
+    "email",
+    "description",
+    "location",
+    "date",
+    "logo_path"
+  ],
+  "properties": {
+    "full_title": {
+      "description": "Long workshop title (e.g. 'Workshop on Asynchronous Many-Task Systems and Applications 2026').",
+      "$ref": "_common.schema.json#/$defs/nonEmptyString"
+    },
+    "short_title": {
+      "description": "Short workshop title used in the navbar / browser tab (e.g. 'WAMTA 26').",
+      "$ref": "_common.schema.json#/$defs/nonEmptyString"
+    },
+    "email": {
+      "description": "Primary contact email for the year. Use 'TBA' for placeholder years.",
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "description": "One-line description used in <meta> tags and the contact card. 'TBA' is acceptable for placeholder years.",
+      "$ref": "_common.schema.json#/$defs/nonEmptyString"
+    },
+    "location": {
+      "description": "Human-readable location (e.g. 'Garching near Munich, Germany'). 'TBA' is acceptable for placeholder years.",
+      "$ref": "_common.schema.json#/$defs/nonEmptyString"
+    },
+    "date": {
+      "description": "Free-form date range (e.g. 'February 16th to 18th, 2026'). 'TBA' is acceptable for placeholder years.",
+      "$ref": "_common.schema.json#/$defs/nonEmptyString"
+    },
+    "logo_path": {
+      "description": "Site-relative path to the year's logo, expected under /assets/years/<year>/images/.",
+      "$ref": "_common.schema.json#/$defs/yearAssetPath"
+    },
+    "important_dates_card_suffix": {
+      "description": "Optional suffix appended to the Important Dates card title (e.g. '(AoE)').",
+      "type": "string"
+    },
+    "slideshow": {
+      "description": "Ordered list of slideshow images displayed on the home page. Empty array suppresses the slideshow.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/slide"
+      }
+    },
+    "social_media": {
+      "$ref": "#/$defs/socialMedia"
+    }
+  },
+  "$defs": {
+    "slide": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "image_path"
+      ],
+      "properties": {
+        "id": {
+          "description": "Numeric slide identifier (typically 0-indexed).",
+          "type": "integer",
+          "minimum": 0
+        },
+        "image_path": {
+          "description": "Site-relative path to the slide image, expected under /assets/years/<year>/images/slideshow/.",
+          "$ref": "_common.schema.json#/$defs/yearAssetPath"
+        },
+        "description": {
+          "description": "Optional caption / alt text.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "photographer_name": {
+          "description": "Optional photographer credit.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "photographer_link": {
+          "description": "Optional URL to the photographer.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "active": {
+          "description": "When true, marks the slide as the initially-active one in a Bootstrap carousel.",
+          "type": "boolean"
+        }
+      }
+    },
+    "socialMedia": {
+      "description": "Optional social media links. Empty / null entries hide the corresponding icon.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "facebook_link": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "twitter_link": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

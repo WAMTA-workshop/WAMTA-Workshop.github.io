@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WAMTA Call for Papers data (cfp.yml)",
+  "description": "Drives the per-year /cfp page rendered by _includes/cfp.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "description"
+  ],
+  "properties": {
+    "description": {
+      "description": "Multi-paragraph workshop description / motivation. Markdown allowed.",
+      "$ref": "_common.schema.json#/$defs/markdownText"
+    },
+    "special_issue": {
+      "description": "Optional markdown block describing the linked Special Issue (journal, link).",
+      "$ref": "_common.schema.json#/$defs/markdownText"
+    },
+    "contact": {
+      "description": "Optional markdown block with contact email/people for CFP questions.",
+      "$ref": "_common.schema.json#/$defs/markdownText"
+    },
+    "submission": {
+      "description": "Optional markdown block with submission instructions (EasyChair link, format requirements).",
+      "$ref": "_common.schema.json#/$defs/markdownText"
+    },
+    "sections": {
+      "description": "Optional list of titled sub-sections (e.g. 'Abstracts', 'Full Papers', 'Best Paper Award').",
+      "type": "array",
+      "items": {
+        "$ref": "_common.schema.json#/$defs/section"
+      }
+    },
+    "dates": {
+      "description": "Optional list of important CFP-related deadlines (free-form value text).",
+      "type": "array",
+      "items": {
+        "$ref": "_common.schema.json#/$defs/labelValue"
+      }
+    }
+  }
+}

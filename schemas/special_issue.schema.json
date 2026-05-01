@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WAMTA special issue page data (special_issue.yml)",
+  "description": "Drives the per-year /special-issue page rendered by _includes/special-issue.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "description"
+  ],
+  "properties": {
+    "nav_hidden": {
+      "description": "When true, the page stays reachable but is omitted from the top navigation.",
+      "type": "boolean"
+    },
+    "title": {
+      "description": "Page heading text (e.g. 'Special issue').",
+      "$ref": "_common.schema.json#/$defs/nonEmptyString"
+    },
+    "description": {
+      "description": "Paragraph describing the special issue, journal, and theme. Markdown allowed.",
+      "$ref": "_common.schema.json#/$defs/markdownText"
+    },
+    "editors": {
+      "description": "Optional list of guest editors (free-form 'Name (Affiliation)').",
+      "type": "array",
+      "items": {
+        "$ref": "_common.schema.json#/$defs/nonEmptyString"
+      }
+    },
+    "submission": {
+      "description": "Markdown block with submission instructions (Editorial Manager link, author guidelines, LaTeX template).",
+      "$ref": "_common.schema.json#/$defs/markdownText"
+    },
+    "dates": {
+      "description": "Important dates with free-form values (allows '<del>May 30th</del> June 15th.' style markdown).",
+      "type": "array",
+      "items": {
+        "$ref": "_common.schema.json#/$defs/labelValue"
+      }
+    },
+    "show_contact": {
+      "description": "When true, renders the contact-us include below the special issue content.",
+      "type": "boolean"
+    }
+  }
+}

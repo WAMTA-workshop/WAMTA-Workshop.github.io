@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WAMTA keynote page data (keynote.yml)",
+  "description": "Drives the per-year /keynote page rendered by _includes/keynote.md. Each talk has a structured speaker, title, and abstract; optional homepage and materials links are surfaced as clickable links and a bulleted list.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "talks"
+  ],
+  "properties": {
+    "nav_hidden": {
+      "description": "When true, the page stays reachable but is omitted from the top navigation.",
+      "type": "boolean"
+    },
+    "talks": {
+      "description": "Ordered list of keynote talks (typically labeled Keynote I, II, III). May be an empty array on placeholder years.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/talk"
+      }
+    }
+  },
+  "$defs": {
+    "talk": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "title",
+        "speaker",
+        "abstract"
+      ],
+      "properties": {
+        "label": {
+          "description": "Section label rendered above the talk (e.g. 'Keynote I').",
+          "$ref": "_common.schema.json#/$defs/nonEmptyString"
+        },
+        "title": {
+          "description": "Talk title.",
+          "$ref": "_common.schema.json#/$defs/nonEmptyString"
+        },
+        "speaker": {
+          "description": "Speaker's full name.",
+          "$ref": "_common.schema.json#/$defs/nonEmptyString"
+        },
+        "affiliation": {
+          "description": "Optional affiliation (institution / lab). Plain text only; do not embed markdown links here, use the homepage field instead.",
+          "type": "string"
+        },
+        "homepage": {
+          "description": "Optional URL to the speaker's homepage. Rendered as a trailing clickable link after the affiliation.",
+          "$ref": "_common.schema.json#/$defs/url"
+        },
+        "abstract": {
+          "description": "Multi-paragraph abstract. Markdown allowed; do not embed structured material lists here, use 'materials' instead.",
+          "$ref": "_common.schema.json#/$defs/markdownText"
+        },
+        "materials": {
+          "description": "Optional list of supplementary links (Slides, Video, ...).",
+          "type": "array",
+          "items": {
+            "$ref": "_common.schema.json#/$defs/linkRecord"
+          }
+        }
+      }
+    }
+  }
+}

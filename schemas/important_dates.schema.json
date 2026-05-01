@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WAMTA important dates list (important_dates.yml)",
+  "description": "Drives the Important Dates sidebar card rendered by _includes/card-important-dates.html. Each entry is {date, text} with optional timezone. The strikethrough/'past' state is derived at render time by comparing 'date' to site.time; it is not encoded in the data.",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/importantDate"
+  },
+  "$defs": {
+    "importantDate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "date",
+        "text"
+      ],
+      "properties": {
+        "date": {
+          "description": "ISO YYYY-MM-DD date or the literal string TBA.",
+          "$ref": "_common.schema.json#/$defs/isoDate"
+        },
+        "text": {
+          "description": "Deadline description (e.g. 'Deadline for proceedings paper submission').",
+          "$ref": "_common.schema.json#/$defs/nonEmptyString"
+        },
+        "timezone": {
+          "description": "Optional timezone qualifier (e.g. 'AoE'). For year-wide suffixes, prefer config.important_dates_card_suffix.",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

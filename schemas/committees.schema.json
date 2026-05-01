@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WAMTA committees data (committees.yml)",
+  "description": "Renders the per-year /committees and /organization pages via _includes/committees.md and _includes/organization.md. Top-level keys are committee group names (each an array of members) plus the optional 'labels:' map that overrides the display title for any group.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "labels": {
+      "description": "Optional per-year display titles for committee groups. Keys must be one of the COMMITTEE_GROUP_KEYS; values are free-form strings (e.g. 'Local Organizers' or 'Program Committee Chairs').",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "organizing_committee": {
+          "type": "string"
+        },
+        "program_chair": {
+          "type": "string"
+        },
+        "steering_committee": {
+          "type": "string"
+        },
+        "technical_program_chair": {
+          "type": "string"
+        },
+        "technical_program_committee": {
+          "type": "string"
+        },
+        "webmaster": {
+          "type": "string"
+        }
+      }
+    },
+    "organizing_committee": {
+      "$ref": "#/$defs/memberList"
+    },
+    "program_chair": {
+      "$ref": "#/$defs/memberList"
+    },
+    "steering_committee": {
+      "$ref": "#/$defs/memberList"
+    },
+    "technical_program_chair": {
+      "$ref": "#/$defs/memberList"
+    },
+    "technical_program_committee": {
+      "$ref": "#/$defs/memberList"
+    },
+    "webmaster": {
+      "$ref": "#/$defs/memberList"
+    }
+  },
+  "$defs": {
+    "memberList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/member"
+      }
+    },
+    "member": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "description": "Person's display name.",
+          "$ref": "_common.schema.json#/$defs/nonEmptyString"
+        },
+        "org": {
+          "description": "Optional affiliation (institution / lab / company), parenthetical country allowed.",
+          "type": "string"
+        },
+        "homepage": {
+          "description": "Optional URL to the member's homepage. Empty / null is allowed for members without one.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "role": {
+          "description": "Optional role descriptor (e.g. 'Co-Chair').",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

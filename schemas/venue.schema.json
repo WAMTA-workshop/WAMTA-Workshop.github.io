@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WAMTA venue page data (venue.yml)",
+  "description": "Drives the per-year /venue page rendered by _includes/venue.md. Each section may carry an optional Google Maps embed via map: { src, width, height }.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "sections"
+  ],
+  "properties": {
+    "nav_hidden": {
+      "description": "When true, the page stays reachable but is omitted from the top navigation.",
+      "type": "boolean"
+    },
+    "intro": {
+      "description": "Optional intro paragraph above the sections (Markdown allowed).",
+      "type": "string"
+    },
+    "sections": {
+      "description": "Ordered list of titled sections (Conference Location, Accommodation, Directions, Travel by air, ...). Each section can optionally embed a map.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "_common.schema.json#/$defs/section"
+      }
+    }
+  }
+}

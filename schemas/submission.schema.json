@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WAMTA submission page data (submission.yml)",
+  "description": "Drives the per-year /submission page rendered by _includes/submission.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "sections"
+  ],
+  "properties": {
+    "nav_hidden": {
+      "description": "When true, the page stays reachable but is omitted from the top navigation. See _includes/header.html for nav resolution.",
+      "type": "boolean"
+    },
+    "sections": {
+      "description": "Ordered list of titled content sections (Abstract submission, Proceedings submission, etc.).",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "_common.schema.json#/$defs/section"
+      }
+    },
+    "show_contact": {
+      "description": "When true, renders the contact-us include below the submission content.",
+      "type": "boolean"
+    },
+    "show_important_dates": {
+      "description": "When true, renders the Important Dates sidebar card on the submission page.",
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WAMTA short-course page data (shortcourse.yml)",
+  "description": "Drives the per-year /shortcourse page rendered by _includes/shortcourse.md. All keys are optional so the file can stand as a commented-out template for years that did not host their own short course; an entirely-commented file (parses as null) is also accepted.",
+  "type": ["object", "null"],
+  "additionalProperties": false,
+  "properties": {
+    "nav_hidden": {
+      "description": "When true, the page stays reachable but is omitted from the top navigation. Original WAMTA convention is to hide short-course pages even when they exist.",
+      "type": "boolean"
+    },
+    "title": {
+      "description": "Page heading text (e.g. 'Short course: Modern STL Basics').",
+      "$ref": "_common.schema.json#/$defs/nonEmptyString"
+    },
+    "description": {
+      "description": "Multi-paragraph intro describing the course and instructor. Markdown allowed.",
+      "$ref": "_common.schema.json#/$defs/markdownText"
+    },
+    "topics": {
+      "description": "Bulleted list of primary course topics.",
+      "type": "array",
+      "items": {
+        "$ref": "_common.schema.json#/$defs/nonEmptyString"
+      }
+    },
+    "additional_topics": {
+      "description": "Bulleted list of advanced / additional course topics.",
+      "type": "array",
+      "items": {
+        "$ref": "_common.schema.json#/$defs/nonEmptyString"
+      }
+    },
+    "logistics": {
+      "description": "Markdown block listing important dates, registration link, dates, etc.",
+      "$ref": "_common.schema.json#/$defs/markdownText"
+    },
+    "show_contact": {
+      "description": "When true, renders the contact-us include below the short-course content.",
+      "type": "boolean"
+    }
+  }
+}
