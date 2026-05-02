@@ -7,13 +7,14 @@
   -webkit-backface-visibility: hidden;
 }
 
-.jumbotron,
 .carousel-item {
   height: 270px;
   border-radius: 0;
 }
 
 .jumbotron {
+  min-height: 270px;
+  border-radius: 0;
   background-color: #e0e8ef;
   padding: 0px 5px 0px 5px;
   margin: 0px 0px 5px 0px;
