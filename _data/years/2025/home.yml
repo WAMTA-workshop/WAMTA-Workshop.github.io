@@ -37,11 +37,11 @@ topics:
 artifacts: ''
 previous_events:
 - label: WAMTA 2024
-  url: https://wamta24.icl.utk.edu/
+  url: https://wamta-workshop.github.io/2024
   host: "[ICL](https://icl.utk.edu/)/[UTK](https://www.utk.edu/)"
   artifacts_url: https://zenodo.org/communities/wamta24
 - label: WAMTA 2023
-  url: https://wamta23.stellar-group.org/
+  url: https://wamta-workshop.github.io/2023
   host: "[CCT](https://www.cct.lsu.edu/)/[LSU](https://lsu.edu/)"
   artifacts_url: https://zenodo.org/communities/wamta23?q=&l=list&p=1&s=10&sort=newest
 show_contact: true

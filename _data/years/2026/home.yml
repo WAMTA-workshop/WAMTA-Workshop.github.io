@@ -38,15 +38,15 @@ topics:
 artifacts: Collection of [artifacts](https://zenodo.org/communities/wamta26/).
 previous_events:
 - label: WAMTA 2025
-  url: https://wamta25.github.io/
+  url: https://wamta-workshop.github.io/2025
   host: "[SLU](https://www.slu.edu/)"
   artifacts_url: https://zenodo.org/communities/wamta25
 - label: WAMTA 2024
-  url: https://wamta24.icl.utk.edu/
+  url: https://wamta-workshop.github.io/2024
   host: "[ICL](https://icl.utk.edu/)/[UTK](https://www.utk.edu/)"
   artifacts_url: https://zenodo.org/communities/wamta24
 - label: WAMTA 2023
-  url: https://wamta23.stellar-group.org/
+  url: https://wamta-workshop.github.io/2023/
   host: "[CCT](https://www.cct.lsu.edu/)/[LSU](https://lsu.edu/)"
   artifacts_url: https://zenodo.org/communities/wamta23
 show_contact: true
