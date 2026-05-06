@@ -10,7 +10,9 @@
 # render that card as TBA. Drop the `homepage` to render the name without a
 # link.
 program_chair:
-  - { name: TBA, org: TBA, homepage: }
+  - { name: Patrick Diehl, org: Los Alamos National Laboratory, homepage: }
+  - { name: Rabab Alomairy, org: Massachusetts Institute of Technology, homepage: }
+  - { name: Alan Edelman, org: Massachusetts Institute of Technology, homepage: }
 steering_committee:
   - { name: TBA, org: TBA, homepage: }
 technical_program_chair:
