@@ -1,3 +1,12 @@
 # Each entry: { date: YYYY-MM-DD or TBA, text: ..., timezone (optional): ... }
-# Past dates auto-strikethrough based on `site.time` vs `date`.
-[2026-10-09, Abstract and poster submission]
+---
+- date: 2026-10-09
+  text: Deadline for abstract and poster submission
+- date: 2026-10-23
+  text: Author notification for poster and talks
+- date: 2027-01-15
+  text: Deadline for proceedings paper submission
+- date: 2027-02-05
+  text: Author notification for proceedings papers
+- date: 2027-02-19
+  text: Deadline for camera-ready paper submission# Past dates auto-strikethrough based on `site.time` vs `date`.
