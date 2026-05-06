@@ -9,4 +9,4 @@
 - date: 2027-02-05
   text: Author notification for proceedings papers
 - date: 2027-02-19
-  text: Deadline for camera-ready paper submission# Past dates auto-strikethrough based on `site.time` vs `date`.
+  text: Deadline for camera-ready paper submission # Past dates auto-strikethrough based on `site.time` vs `date`.
