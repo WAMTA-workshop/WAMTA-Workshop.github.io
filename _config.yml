@@ -2,7 +2,7 @@
 baseurl: ''
 url: https://wamta-workshop.github.io
 css: "./assets/hotweb.css"
-current_year: '2026'
+current_year: '2027'
 markdown: kramdown
 exclude:
 - Gemfile
