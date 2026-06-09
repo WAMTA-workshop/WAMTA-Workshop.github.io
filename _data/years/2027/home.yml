@@ -37,12 +37,12 @@ topics:
 - AI-Assisted and Agentic Code Development
 - Usage of AMTs in AI workflows
 # Optional fields:
- artifacts: Collection of [artifacts](https://zenodo.org/communities/wamta27/).
- previous_events:
-   - label: WAMTA 2026
-     url: https://wamta26.stellar-group.org/
-     host: "[MPCDF](https://www.mpcdf.mpg.de/)"
-     artifacts_url: https://zenodo.org/communities/wamta26
+artifacts: Collection of [artifacts](https://zenodo.org/communities/wamta27/).
+previous_events:
+  - label: WAMTA 2026
+    url: https://wamta26.stellar-group.org/
+    host: "[MPCDF](https://www.mpcdf.mpg.de/)"
+    artifacts_url: https://zenodo.org/communities/wamta26
   - label: WAMTA 2025
     url: https://wamta-workshop.github.io/2025
     host: "[SLU](https://www.slu.edu/)"
