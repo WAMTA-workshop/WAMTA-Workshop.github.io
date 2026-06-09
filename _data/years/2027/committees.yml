@@ -10,14 +10,17 @@
 # render that card as TBA. Drop the `homepage` to render the name without a
 # link.
 program_chair:
-  - { name: Patrick Diehl, org: Los Alamos National Laboratory, homepage: }
+  - { name: Patrick Diehl, org: Los Alamos National Laboratory, homepage: https://www.diehlpk.de/ }
   - { name: Rabab Alomairy, org: Massachusetts Institute of Technology, homepage: }
   - { name: Alan Edelman, org: Massachusetts Institute of Technology, homepage: }
 steering_committee:
   - { name: TBA, org: TBA, homepage: }
 technical_program_chair:
-  - { name: TBA, org: TBA, homepage: }
+  - { name: Patrick Diehl, org: Los Alamos National Laboratory, homepage: https://www.diehlpk.de/ }
+  - { name: Christoph Junghans, org: Los Alamos National Laboratory, homepage: }
+  - { name: Jonas Posner, org: University of Fulda, homepage: }
+  - { name: Joseph Schuchart, org: Stony Brook University, homepage: }
 technical_program_committee:
   - { name: TBA, org: TBA, homepage: }
 webmaster:
-  - { name: TBA, org: TBA, homepage: }
+  - { name: Parsa Amini, org: AMD Inc. (USA), homepage: https://www.parsaamini.net/ }
