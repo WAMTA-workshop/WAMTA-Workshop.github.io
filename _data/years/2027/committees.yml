@@ -14,7 +14,6 @@ program_chair:
   - { name: Rabab Alomairy, org: Massachusetts Institute of Technology, homepage: }
   - { name: Alan Edelman, org: Massachusetts Institute of Technology, homepage: }
 steering_committee:
-  steering_committee:
   - { name: Alex Aiken, org: "Stanford (USA)", homepage: "http://theory.stanford.edu/~aiken/" }
   - { name: Erwin Laure, org: "Max Planck Computing & Data Facility (Germany)", homepage: "https://www.mpcdf.mpg.de/staff/110539" }
   - { name: Christoph Junghans, org: "Los Alamos National Laboratory (USA)", homepage: "https://www.lanl.gov/search-capabilities/profiles/christoph-junghans.shtml" }
