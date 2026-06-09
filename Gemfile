@@ -1,6 +1,4 @@
 source "https://rubygems.org"
 
-gem "jekyll"
-gem "tzinfo"
-gem "tzinfo-data"
-gem "webrick"
+gem "github-pages", group: :jekyll_plugins
+gem "faraday-retry"
