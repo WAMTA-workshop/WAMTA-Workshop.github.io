@@ -15,3 +15,33 @@ dates:
   value: February 5, 2027
 - label: Camera-ready paper
   value: February 19, 2027
+sections:
+- title: Abstracts
+  body: |-
+    Authors are invited to submit abstracts and indicate if they will
+    submit a short or full paper. This is a two step process and authors
+    will first submit the abstract (October 9th, 2026) and later submit
+    the short or full paper (January 19th, 2027).
+- title: Full Papers
+  body: |-
+    Authors are invited to submit original papers of between ten and
+    twelve pages, including text, the references section, appendices, and
+    figures.
+- title: Short Papers
+  body: |-
+    Alternatively, authors submit position papers and work-in-progress as
+    short papers of at most 6 pages in length, which include tables,
+    figures, references, and appendices.
+
+    At least three program committee members will review each
+    submission. Reviews will be double-blind, and papers will be assessed
+    for quality, relevance, and presentation of contributions. Springer
+    LNCS will publish the accepted papers.
+- title: Best Paper/Poster Award
+  body: |-
+    The Best Paper Award will be selected on the basis of explicit
+    recommendations of the reviewers and their scoring towards the paper’s
+    originality and quality.
+submission: |-
+  Authors need to submit their work through [EasyChair](https://easychair.org/conferences?conf=wamta27). Submissions must
+  be in [Springer LNCS format](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines).
