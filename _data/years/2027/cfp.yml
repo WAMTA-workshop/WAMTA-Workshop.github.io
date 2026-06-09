@@ -3,4 +3,15 @@ description: |-
   As high-performance computing systems move beyond the exascale era, the community continues to address increasingly complex challenges associated with extreme-scale computing. These challenges include dynamic load balancing, efficient data movement, resilience, energy efficiency, heterogeneous resource management, and maximizing utilization across diverse architectures incorporating CPUs, GPUs, and specialized accelerators. Task-based programming models and runtime systems have demonstrated their ability to address many of these challenges through advanced mechanisms such as asynchronous execution, oversubscription, task and data locality, shared-memory optimizations, and data-dependence-driven scheduling.
 
   This workshop explores the role of task-based programming models and runtime systems in current and future HPC environments. It brings together researchers, developers, users, and practitioners to share experiences, discuss advances in programming models, runtimes, and applications, and evaluate how these technologies address the challenges posed by modern and emerging computing architectures. The workshop provides a forum to exchange ideas, identify opportunities for improved performance, scalability, portability, resilience, and productivity, and foster collaborations that advance the efficient utilization of next-generation HPC systems.
-
+contact: |-
+  **Contact**:
+  If you have any problems or questions, please contact us via e-mail at: diehlpk@lanl.gov
+dates:
+- label: Abstract Submission Deadline
+  value: October 9, 2026
+- label: Paper Submission Deadline
+  value: January 15, 2026
+- label: Notification of Acceptance
+  value: February 5, 2027
+- label: Camera-ready paper
+  value: February 19, 2027
