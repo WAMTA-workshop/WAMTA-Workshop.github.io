@@ -1,24 +1,6 @@
-description: TBA
-# Optional fields:
-# special_issue: |-
-#   **Special Issue in <Journal>**
-#
-#   Authors of accepted papers are invited to submit ...
-# contact: |-
-#   **Contact**:
-#   If you have any problems or questions, please contact us via e-mail at: <email>
-# submission: |-
-#   Authors need to submit their work through [EasyChair](https://easychair.org/conferences?conf=wamta27).
-#   Submissions must be in [Springer LNCS format](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines).
-# sections:
-#   - title: Abstracts
-#     body: |-
-#       Authors are invited to submit abstracts ...
-#   - title: Full Papers
-#     body: |-
-#       Authors are invited to submit original papers of between ten and twelve pages ...
-# dates:
-#   - { label: Abstract Submission Deadline, value: TBA }
-#   - { label: Paper Submission Deadline,    value: TBA }
-#   - { label: Notification of Acceptance,   value: TBA }
-#   - { label: Camera-ready paper,           value: TBA }
+---
+description: |-
+  As high-performance computing systems move beyond the exascale era, the community continues to address increasingly complex challenges associated with extreme-scale computing. These challenges include dynamic load balancing, efficient data movement, resilience, energy efficiency, heterogeneous resource management, and maximizing utilization across diverse architectures incorporating CPUs, GPUs, and specialized accelerators. Task-based programming models and runtime systems have demonstrated their ability to address many of these challenges through advanced mechanisms such as asynchronous execution, oversubscription, task and data locality, shared-memory optimizations, and data-dependence-driven scheduling.
+
+  This workshop explores the role of task-based programming models and runtime systems in current and future HPC environments. It brings together researchers, developers, users, and practitioners to share experiences, discuss advances in programming models, runtimes, and applications, and evaluate how these technologies address the challenges posed by modern and emerging computing architectures. The workshop provides a forum to exchange ideas, identify opportunities for improved performance, scalability, portability, resilience, and productivity, and foster collaborations that advance the efficient utilization of next-generation HPC systems.
+
