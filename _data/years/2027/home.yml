@@ -3,9 +3,7 @@ lead: |-
   The WAMTA 2027 workshop is scheduled as a **in-person** event in January 2027 and will be
   held at Cambridge, MA, USA.
 overview: |-
-  The WAMTA 2027 workshop is scheduled as a **in-person** event in January 2027 and will be
-  held at Massachusetts Institute of Technology (MIT), Cambridge, MA, USA. 
-As our compute capacity grows, science simulations are not only becoming
+  As our compute capacity grows, science simulations are not only becoming
   bigger, but more complex. Simulations are carried out at multiple scales
   and using multiple kinds of physics at once. Boundaries are irregular,
   grids are irregular, computational domains can be dynamic and complex.
@@ -45,6 +43,18 @@ topics:
      url: https://wamta26.stellar-group.org/
      host: "[MPCDF](https://www.mpcdf.mpg.de/)"
      artifacts_url: https://zenodo.org/communities/wamta26
+  - label: WAMTA 2025
+    url: https://wamta-workshop.github.io/2025
+    host: "[SLU](https://www.slu.edu/)"
+    artifacts_url: https://zenodo.org/communities/wamta25
+  - label: WAMTA 2024
+    url: https://wamta-workshop.github.io/2024
+    host: "[ICL](https://icl.utk.edu/)/[UTK](https://www.utk.edu/)"
+    artifacts_url: https://zenodo.org/communities/wamta24
+  - label: WAMTA 2023
+    url: https://wamta-workshop.github.io/2023/
+    host: "[CCT](https://www.cct.lsu.edu/)/[LSU](https://lsu.edu/)"
+    artifacts_url: https://zenodo.org/communities/wamta23
 show_contact: true
 show_important_dates: true
 show_news: true
