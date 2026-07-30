@@ -14,5 +14,5 @@ sections:
   #     * <Hotel Name> \\
   #       <Address line 1> \\
   #       <Address line 2>
-  # - title: Travel by air
-  #   body: TBA
+   - title: Travel by air
+     body: The closest airport to MIT is [Boston's Logan International Airport](https://www.massport.com/logan-airport).
