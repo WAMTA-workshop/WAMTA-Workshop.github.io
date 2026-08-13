@@ -5,8 +5,9 @@ sections:
     # Optional embedded Google Maps iframe:
     # map:
     #   src: "https://www.google.com/maps/embed?pb=..."
-    #   width: '600'
-    #   height: '450'
+    #   width: "600"
+    #   height: "450"
+
   # - title: Accommodation
   #   body: |-
   #     Conference lodging has been reserved as follows:
@@ -14,8 +15,12 @@ sections:
   #     * <Hotel Name> \\
   #       <Address line 1> \\
   #       <Address line 2>
+
   - title: Travel by air
-     body: The closest airport to MIT is [Boston's Logan International Airport](https://www.massport.com/logan-airport).
-  - title: From Logan International  airport to MIT
-    body: Taxi or ridshare: Taxi fare from the airport is about $35–$40, and a rideshare service can range from about $30–$40. During non-rush hour, the ride will take about 15 minutes; during rush hour, it may take 30 minutes or more. \\
-     Subway: From any terminal at Logan Airport, take the Silver Line bus to South Station. At South Station, change to the Red Line subway to Kendall/MIT (inbound toward Alewife). The ride should take about 30 minutes.
+    body: The closest airport to MIT is [Boston's Logan International Airport](https://www.massport.com/logan-airport).
+
+  - title: From Logan International Airport to MIT
+    body: |-
+      **Taxi or rideshare:** Taxi fare from the airport is about $35–$40, and a rideshare service can range from about $30–$40. During non-rush hour, the ride takes about 15 minutes; during rush hour, it may take 30 minutes or more.
+
+      **Subway:** From any terminal at Logan Airport, take the Silver Line bus to South Station. At South Station, change to the Red Line toward Alewife and exit at Kendall/MIT. The trip should take about 30 minutes.
