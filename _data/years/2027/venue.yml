@@ -1,12 +1,16 @@
 intro: TBA
 sections:
   - title: Conference Location
-    body: TBA
+    body: Stata Building, Kiva Room G449 and Star Room D463, 32 Vassar Street, Cambridge, MA 02139
     # Optional embedded Google Maps iframe:
-    # map:
-    #   src: "https://www.google.com/maps/embed?pb=..."
-    #   width: "600"
-    #   height: "450"
+    map:
+      src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2192.402061412017!2d-71.09291260647154!3d42.36173924557207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370a95d3025a9%3A0xb1de557289ff6bbe!2s32%20Vassar%20St%2C%20Cambridge%2C%20MA%2002139%2C%20USA!5e0!3m2!1sen!2s!4v1786599454416!5m2!1sen!2s"
+      width: 600
+      height: 450
+      style: "border:0;"
+      allowfullscreen: true
+      loading: "lazy"
+      referrerpolicy: "strict-origin-when-cross-origin"
 
   # - title: Accommodation
   #   body: |-
