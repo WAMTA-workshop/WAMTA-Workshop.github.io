@@ -35,7 +35,7 @@ topics:
 - Tools for debugging programs using task-based runtimes
 - Challenges to task-based runtimes in scaling to large clusters
 - Hardware challenges and solutions in using task-based environments
-artifacts: ''
+artifacts: [Conference proceedings](https://link.springer.com/book/10.1007/978-3-032-27676-6) and [Collection of slides on [Zenodo](https://zenodo.org/communities/wamta23/).
 previous_events: []
 show_contact: true
 show_important_dates: true
