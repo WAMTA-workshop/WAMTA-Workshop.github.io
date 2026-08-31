@@ -35,7 +35,7 @@ topics:
 - Tools for debugging programs using task-based runtimes
 - Challenges to task-based runtimes in scaling to large clusters
 - Hardware challenges and solutions in using task-based environments
-artifacts: ''
+artifacts: [Conference proceedings](https://link.springer.com/book/10.1007/978-3-031-61763-8) and collection of slides on [Zenodo](https://zenodo.org/communities/wamta24/).
 previous_events:
 - label: WAMTA 2023
   url: https://wamta-workshop.github.io/2023/
