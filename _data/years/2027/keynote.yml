@@ -2,12 +2,12 @@ talks: []
 # Each talk is a mapping. Required: label, title, speaker, abstract.
 # Optional: affiliation, homepage, materials (list of { label, url }).
 #
-# talks:
-#   - label: Keynote I
-#     title: TBA
-#     speaker: TBA
-#     affiliation: TBA
-#     homepage: https://example.org
+ talks:
+   - label: Keynote I
+     title: TBA
+     speaker: David Keyes
+     affiliation: Professor of Applied Mathematics and Computational Sciences, Computer Science, and Mechanical Engineering at KAUST.
+     homepage: https://www.kaust.edu.sa/en/study/faculty/david-keyes
 #     abstract: |-
 #       Markdown-formatted abstract. Multiple paragraphs OK.
 #     materials:
