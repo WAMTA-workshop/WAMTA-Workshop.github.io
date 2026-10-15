@@ -8,6 +8,16 @@ talks:
     affiliation: Professor of Applied Mathematics and Computational Sciences, Computer Science, and Mechanical Engineering at KAUST.
     homepage: https://www.kaust.edu.sa/en/study/faculty/david-keyes
     abstract: TBA
+  - label: Keynote II
+    title: TBA
+    speaker: Alex Aiken
+    affiliation: Professor of Computer Science at Stanford University.
+    abstract: TBA
+  - label: Keynote III
+    title: TBA
+    speaker: Mohammad A. H. Monil
+    affiliation: Research Scientist in the Advanced Computing Systems Research Section at Oak Ridge National Laboratory.
+    abstract: TBA
 #     abstract: |-
 #       Markdown-formatted abstract. Multiple paragraphs OK.
 #     materials:
