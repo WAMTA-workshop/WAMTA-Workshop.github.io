@@ -8,20 +8,22 @@ contact: |-
   If you have any problems or questions, please contact us via e-mail at: diehlpk@lanl.gov
 dates:
 - label: Abstract Submission Deadline
-  value: "<del>October 9, 2026</del> October 23, 2026"
+  value: November 15, 2026
+- label: Abstract Notification
+  value: November 24, 2026
 - label: Paper Submission Deadline
-  value: January 15, 2027
-- label: Notification of Acceptance
-  value: February 5, 2027
+  value: January 5, 2027
+- label: Proceedings Paper Notification
+  value: January 12, 2027
 - label: Camera-ready paper
-  value: February 19, 2027
+  value: February 1, 2027
 sections:
 - title: Abstracts
   body: |-
     Authors are invited to submit abstracts and indicate if they will
     submit a short or full paper. This is a two step process and authors
-    will first submit the abstract (October 23rd, 2026) and later submit
-    the short or full paper (January 15th, 2027).
+    will first submit the abstract (November 15th, 2026) and later submit
+    the short or full paper (January 5th, 2027).
 - title: Full Papers
   body: |-
     Authors are invited to submit original papers of between ten and
