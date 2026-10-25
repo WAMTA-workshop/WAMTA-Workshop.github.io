@@ -97,6 +97,20 @@
             "null"
           ]
         },
+        "license_name": {
+          "description": "Optional short name of the image license (for example, CC BY 4.0 or Public domain).",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "license_url": {
+          "description": "Optional URL for the image license.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
         "active": {
           "description": "When true, marks the slide as the initially-active one in a Bootstrap carousel.",
           "type": "boolean"

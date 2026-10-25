@@ -1,11 +1,11 @@
-<header class="site-header">
+<header class="site-header site-header-{{ year }}">
   <div class="row">
 
     <!--year-specific workshop info-->
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-5 col-xl-4 offset-xl-1">
 
       <div class="jumbotron">
-        <img class="img-fluid" src="{{ year_config.logo_path | relative_url }}">
+        <img class="img-fluid" src="{{ year_config.logo_path | relative_url }}" alt="{{ year_config.short_title }}">
         <h5 class="text-center mt-0">{{ year_config.date }}</h5>
         <p class="text-center mt-4 mb-4">{{ year_config.full_title }}</p>
         <p class="text-center mb-0">{{ year_config.location }}</p>
@@ -28,9 +28,15 @@
             {% endif %}
             <!--<img class="img-fluid" src="{{ site.baseurl }}{{ slide.image_path }}" alt="{{ slide.description }}">-->
             <img class="img-fluid" src="{{ slide.image_path | relative_url }}" alt="{{ slide.description }}">
-            <div class="carousel-caption d-none d-md-block text-muted">
-              <p class="align-bottom"> {{ slide.description }}, by <a href="{{ slide.photographer_link }}">{{slide.photographer_name}}</a>, under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">Creative Commons license</a>.</p>
+            {% if slide.description or slide.photographer_name or slide.license_name %}
+              <div class="carousel-caption d-none d-md-block text-muted">
+                <p class="align-bottom">
+                  {% if slide.description %}{{ slide.description }}{% endif %}
+                  {% if slide.photographer_name %}, by {% if slide.photographer_link %}<a href="{{ slide.photographer_link }}">{% endif %}{{ slide.photographer_name }}{% if slide.photographer_link %}</a>{% endif %}{% endif %}
+                  {% if slide.license_name %}, under {% if slide.license_url %}<a href="{{ slide.license_url }}">{% endif %}{{ slide.license_name }}{% if slide.license_url %}</a>{% endif %}{% endif %}.
+                </p>
               </div>
+            {% endif %}
             </div>
             {% endfor %}
 

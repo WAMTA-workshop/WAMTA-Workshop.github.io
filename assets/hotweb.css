@@ -46,6 +46,40 @@
   font-size: 0.2rem;
 }
 
+.site-header-2027 .carousel-item {
+  overflow: hidden;
+  background: #dfe8ef;
+}
+
+.site-header-2027 .carousel-item > img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.site-header-2027 .carousel-caption {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  padding: 0.35rem 0.75rem;
+  background: rgba(0, 0, 0, 0.58);
+  color: #fff !important;
+  text-align: right;
+}
+
+.site-header-2027 .carousel-caption p {
+  margin: 0;
+  font-size: 0.65rem;
+  line-height: 1.25;
+}
+
+.site-header-2027 .carousel-caption a {
+  color: #fff;
+  text-decoration: underline;
+}
+
 .card {
   margin-top: 0.25rem;
   margin-bottom: 1.25rem;

@@ -1,11 +1,35 @@
-full_title: Workshop on Asynchronous Many-Task Systems and Applications 2027
-short_title: WAMTA 27
+full_title: Workshop on Asynchronous Many-Task Systems and Applications
+short_title: WAMTA 2027
 email: TBA
 description: TBA
 location: Cambridge, MA, USA
-date: January 26–28
-logo_path: "/assets/years/2027/images/logo.png"   # drop a real logo at this path
-slideshow: []                                       # add { id, image_path, description, photographer_name, photographer_link, active } entries
+date: January 26th to 28th, 2027
+logo_path: "/assets/years/2027/images/logo.svg"
+slideshow:
+- id: 0
+  image_path: "/assets/years/2027/images/slideshow/mit-great-dome.jpg"
+  description: MIT's Great Dome in early winter
+  photographer_name: Daderot
+  photographer_link: https://commons.wikimedia.org/wiki/File:Great_Dome,_MIT_-_IMG_8390.JPG
+  license_name: Public domain
+  license_url:
+  active: true
+- id: 1
+  image_path: "/assets/years/2027/images/slideshow/mit-stata-center-winter.jpg"
+  description: Ray and Maria Stata Center in winter
+  photographer_name: Rizka
+  photographer_link: https://commons.wikimedia.org/wiki/File:Stata_Center_in_the_Winter_(MIT).jpg
+  license_name: CC0
+  license_url: https://creativecommons.org/publicdomain/zero/1.0/
+  active: false
+- id: 2
+  image_path: "/assets/years/2027/images/slideshow/mit-kresge-auditorium.jpg"
+  description: Kresge Auditorium on the MIT campus
+  photographer_name: ajay_suresh
+  photographer_link: https://commons.wikimedia.org/wiki/File:Kresge_Auditorium_-_MIT_(54960889194).jpg
+  license_name: CC BY 4.0
+  license_url: https://creativecommons.org/licenses/by/4.0/
+  active: false
 social_media:
   facebook_link:
   twitter_link:
