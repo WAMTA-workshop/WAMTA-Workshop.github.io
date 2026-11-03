@@ -1,4 +1,4 @@
-intro: TBA
+intro: The WAMTA 2027 workshop will be held at MIT in Cambridge, Massachusetts.
 sections:
   - title: Conference Location
     body: MIT Building 2, Room 2-449, 182 Memorial Dr, Cambridge, MA 02139
@@ -12,13 +12,33 @@ sections:
       loading: "lazy"
       referrerpolicy: "strict-origin-when-cross-origin"
 
-  # - title: Accommodation
-  #   body: |-
-  #     Conference lodging has been reserved as follows:
-  #
-  #     * <Hotel Name> \\
-  #       <Address line 1> \\
-  #       <Address line 2>
+  - title: Hotels
+    body: |-
+      Approximate walking distances are from MIT Building 2 (182 Memorial Drive); routes and distances may vary.
+
+      **Closest to Building 2 (about 1 mile or less)**
+
+      * **Boston Marriott Cambridge** — about 0.7 mi<br>Address: 50 Broadway, Cambridge, MA 02142<br>Phone: (617) 494-6600
+      * **The Kendall Hotel** — about 0.7 mi<br>Address: 350 Main St., Cambridge, MA 02142<br>Phone: (617) 577-1300
+      * **Residence Inn by Marriott Boston Cambridge** — about 0.8 mi<br>Address: 120 Broadway, 6 Cambridge Center, Cambridge, MA 02142<br>Phone: (617) 349-0700
+      * **Le Méridien Boston Cambridge** — about 0.9 mi<br>Address: 20 Sidney St., Cambridge, MA 02139<br>Phone: (617) 577-0200
+      * **Lark Hotels 907 Main** — about 0.9 mi<br>Address: 907 Main Street, Cambridge, MA 02139<br>Phone: (617) 693-5451
+
+      **Other nearby hotels**
+
+      * **Hyatt Regency Boston / Cambridge** — about 1.2 mi<br>Address: 575 Memorial Drive, Cambridge, MA 02139<br>Phone: (617) 492-1234 or (800) 228-9000
+      * **Courtyard by Marriott Boston Cambridge** — about 1.5 mi<br>Address: 777 Memorial Drive, Cambridge, MA 02139<br>Phone: (617) 492-7777 or (888) 236-2427
+      * **Fairfield by Marriott Inn & Suites Boston Cambridge** — about 1.6 mi<br>Address: 215 Monsignor O'Brien Highway, Cambridge, MA 02141<br>Phone: (617) 621-1999
+      * **Kimpton Marlowe Hotel** — about 1.6 mi<br>Address: 25 Edwin H Land Blvd., Cambridge, MA 02141<br>Phone: (617) 868-8000 or (800) 825-7140
+      * **Holiday Inn Express & Suites Boston - Cambridge** — about 1.7 mi<br>Address: 250 Monsignor O'Brien Highway, Cambridge, MA 02141<br>Phone: (617) 577-7600<br>Email: 295.frontdesk@hhmhotels.com
+      * **The Royal Sonesta Boston** — about 1.7 mi<br>Address: 40 Edwin H Land Blvd., Cambridge, MA 02142<br>Phone: (617) 806-4200
+      * **The Whitney Hotel** — about 2.2 mi<br>Address: 170 Charles Street, Boston, MA 02114<br>Phone: (888) 673-3650
+
+      **Local inns that provide MIT rates**
+
+      * **Ginkgo House on Harvard** — about 1.8 mi<br>Address: 288 Harvard St, Cambridge, MA 02139<br>Phone: (617) 858-0882
+      * **Irving House at Harvard** — about 2.5 mi<br>Address: 24 Irving St, Cambridge, MA 02138<br>Phone: (617) 547-4600
+      * **A Friendly Inn at Harvard Square** — about 2.7 mi<br>Address: 1673 Cambridge Street, Cambridge, MA 02138<br>Phone: (617) 547-7851
 
   - title: Travel by air
     body: The closest airport to MIT is [Boston's Logan International Airport](https://www.massport.com/logan-airport).
