@@ -14,10 +14,10 @@ talks:
     affiliation: Professor of Computer Science at Stanford University.
     abstract: TBA
   - label: Keynote III
-    title: TBA
+    title: Orchestrating Extreme Heterogeneity: Agentic AI for Task-Based Runtimes and Scheduling, from CPUs and GPUs to Quantum
     speaker: Mohammad A. H. Monil
     affiliation: Research Scientist in the Advanced Computing Systems Research Section at Oak Ridge National Laboratory.
-    abstract: TBA
+    abstract: |- As HPC systems move toward extreme heterogeneity, combining CPUs, GPUs, FPGAs, and emerging quantum and optical accelerators, asynchronous many-task (AMT) runtimes offer a natural foundation for portability and efficient resource use. Yet porting applications, mapping tasks to devices, and tuning scheduling and memory policies still fall largely on developers. This talk presents our work at Oak Ridge National Laboratory on IRIS, a task-based runtime that unifies programming and execution across diverse devices, and its extension to quantum and optical accelerators as first-class resources. We then show how LLMs and agentic AI can make such runtimes more intelligent: translating code across programming models, predicting performance and energy to guide scheduling, and generating runtime-ready tasks. Finally, we discuss the path toward self-optimizing AMT systems.
 #     abstract: |-
 #       Markdown-formatted abstract. Multiple paragraphs OK.
 #     materials:
