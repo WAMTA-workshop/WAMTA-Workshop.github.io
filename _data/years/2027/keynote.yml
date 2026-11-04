@@ -14,7 +14,7 @@ talks:
     affiliation: Professor of Computer Science at Stanford University.
     abstract: TBA
   - label: Keynote III
-    title: Orchestrating Extreme Heterogeneity: Agentic AI for Task-Based Runtimes and Scheduling, from CPUs and GPUs to Quantum
+    title: "Orchestrating Extreme Heterogeneity: Agentic AI for Task-Based Runtimes and Scheduling, from CPUs and GPUs to Quantum"
     speaker: Mohammad A. H. Monil
     affiliation: Research Scientist in the Advanced Computing Systems Research Section at Oak Ridge National Laboratory.
     abstract: |-
