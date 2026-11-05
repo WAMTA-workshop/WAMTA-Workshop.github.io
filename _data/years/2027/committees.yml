@@ -26,6 +26,10 @@ technical_program_chair:
   - { name: Jonas Posner, org: University of Fulda, homepage: }
   - { name: Joseph Schuchart, org: Stony Brook University, homepage: }
 technical_program_committee:
-  - { name: TBA, org: TBA, homepage: }
+  - { name: Tarun Prabhu, org: Los Alamos National Laboratory, homepage: }
+  - { name: Jered Dominguez-Trujillo, org: Los Alamos National Laboratory, homepage: }
+  - { name: Qinglei Cao, org: Saint Louis University, homepage: }
+  - { name: Sumathi Lakshmiranganatha, org: Los Alamos National Laboratory, homepage: }
+  - { name: Hartmut Kaiser, org: Louisiana State University, homepage: }
 webmaster:
   - { name: Parsa Amini, org: AMD Inc. (USA), homepage: https://www.parsaamini.net/ }
