@@ -34,6 +34,7 @@ technical_program_committee:
   - { name: Dirk Pleiter, org: University of Groningen (Netherland), homepage: }
   - { name: Noujoud Nader, org: Louisiana State University (USA), homepage: }
   - { name: Anna-Lena Roth, org: University of Fulda (Germany), homepage: }
-  - { name: Markus Rampp, org: Max Planck Computing and Data Facility  (Germany), homepage: }
+  - { name: Markus Rampp, org: Max Planck Computing and Data Facility (Germany), homepage: }
+  - { name: Ritvik Rao, org: University of Illinois at Urbana-Champaign (USA), homepage: }
 webmaster:
   - { name: Parsa Amini, org: AMD Inc. (USA), homepage: https://www. .net/ }
