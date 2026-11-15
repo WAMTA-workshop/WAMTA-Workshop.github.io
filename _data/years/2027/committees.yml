@@ -11,27 +11,28 @@
 # link.
 program_chair:
   - { name: Patrick Diehl, org: Los Alamos National Laboratory, homepage: https://www.diehlpk.de/ }
-  - { name: Rabab Alomairy, org: Massachusetts Institute of Technology, homepage: }
+  - { name: Rabab Alomairy, org: King Abdullah University of Science and Technology, homepage: https://cemse.kaust.edu.sa/profiles/rabab-alomairy }
   - { name: Alan Edelman, org: Massachusetts Institute of Technology, homepage: }
 steering_committee:
   - { name: Alex Aiken, org: "Stanford (USA)", homepage: "http://theory.stanford.edu/~aiken/" }
   - { name: Erwin Laure, org: "Max Planck Computing & Data Facility (Germany)", homepage: "https://www.mpcdf.mpg.de/staff/110539" }
   - { name: Christoph Junghans, org: "Los Alamos National Laboratory (USA)", homepage: "https://www.lanl.gov/search-capabilities/profiles/christoph-junghans.shtml" }
-  - { name: Bryce Adelstein Lelbach, org: "NVIDIA (USA)", homepage: "https://www.linkedin.com/in/brycelelbach/" }
+  - { name: Bryce Adelstein Lelbach, org: "Modal (USA)", homepage: "https://www.linkedin.com/in/brycelelbach/" }
   - { name: Laxmikant V. Kale, org: "University of Illinois at Urbana-Champaign (USA)", homepage: "https://cs.illinois.edu/about/people/all-faculty/kale" }
   - { name: Brad Chamberlain, org: "HPE and University of Washington (USA)", homepage: "https://homes.cs.washington.edu/~bradc/" }
 technical_program_chair:
-  - { name: Patrick Diehl, org: Los Alamos National Laboratory, homepage: https://www.diehlpk.de/ }
-  - { name: Christoph Junghans, org: Los Alamos National Laboratory, homepage: }
-  - { name: Jonas Posner, org: University of Fulda, homepage: }
-  - { name: Joseph Schuchart, org: Stony Brook University, homepage: }
+  - { name: Patrick Diehl, org: Los Alamos National Laboratory (USA), homepage: https://www.diehlpk.de/ }
+  - { name: Christoph Junghans, org: Los Alamos National Laboratory (USA), homepage: }
+  - { name: Jonas Posner, org: University of Fulda (Germany), homepage: }
+  - { name: Joseph Schuchart, org: Stony Brook University (USA), homepage: }
 technical_program_committee:
-  - { name: Tarun Prabhu, org: Los Alamos National Laboratory, homepage: }
-  - { name: Jered Dominguez-Trujillo, org: Los Alamos National Laboratory, homepage: }
-  - { name: Qinglei Cao, org: Saint Louis University, homepage: }
-  - { name: Sumathi Lakshmiranganatha, org: Los Alamos National Laboratory, homepage: }
-  - { name: Hartmut Kaiser, org: Louisiana State University, homepage: }
-  - { name: Joseph Schuchart, org: Stony Brook University, homepage: }
-  - { name: Dirk Pleiter, org: University of Groningen, homepage: }
+  - { name: Tarun Prabhu, org: Los Alamos National Laboratory (USA), homepage: }
+  - { name: Jered Dominguez-Trujillo, org: Los Alamos National Laboratory (USA), homepage: }
+  - { name: Qinglei Cao, org: Saint Louis University (USA), homepage: }
+  - { name: Sumathi Lakshmiranganatha, org: Los Alamos National Laboratory (USA), homepage: }
+  - { name: Hartmut Kaiser, org: Louisiana State University (USA), homepage: }
+  - { name: Dirk Pleiter, org: University of Groningen (Netherland), homepage: }
+  - { name: Noujoud Nader, org: Louisiana State University (USA), homepage: }
+  - { name: Anna-Lena Roth, org: University of Fulda (Germany), homepage: }
 webmaster:
   - { name: Parsa Amini, org: AMD Inc. (USA), homepage: https://www. .net/ }
