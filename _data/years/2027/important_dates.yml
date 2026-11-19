@@ -1,9 +1,10 @@
 # Each entry: { date: YYYY-MM-DD or TBA, text: ..., timezone (optional): ... }
 ---
-- date: 2026-11-15
+- date: 2026-11-29
   text: Deadline for abstract and poster submission
 - date: 2026-11-24
   text: Author notification for poster and talks
+  date_prefix: From
 - date: 2027-01-05
   text: Deadline for proceedings paper submission
 - date: 2027-01-12

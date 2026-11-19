@@ -52,7 +52,7 @@ COMMITTEE_GROUP_KEYS = %w[
   organizing_committee program_chair steering_committee
   technical_program_chair technical_program_committee webmaster
 ].freeze
-IMPORTANT_DATE_KEYS = %w[date text timezone].freeze
+IMPORTANT_DATE_KEYS = %w[date text timezone date_prefix].freeze
 NEWS_KEYS = %w[date text].freeze
 SPONSOR_KEYS = %w[name logo_path].freeze
 KEYNOTE_TALK_KEYS = %w[label title speaker affiliation homepage abstract materials].freeze

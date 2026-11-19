@@ -26,6 +26,10 @@
         "timezone": {
           "description": "Optional timezone qualifier (e.g. 'AoE'). For year-wide suffixes, prefer config.important_dates_card_suffix.",
           "type": "string"
+        },
+        "date_prefix": {
+          "description": "Optional text before the displayed date (e.g. 'From').",
+          "$ref": "_common.schema.json#/$defs/nonEmptyString"
         }
       }
     }

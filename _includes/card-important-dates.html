@@ -17,6 +17,7 @@
             <del>
           {% endif %}
           <p><strong>{{ deadline.text }}:</strong>
+          {% if deadline.date_prefix %}{{ deadline.date_prefix }} {% endif %}
           {% if deadline.date == "TBA" %}
             TBA{% if deadline.timezone %} ({{ deadline.timezone }}){% endif %}
           {% elsif deadline.timezone %}
